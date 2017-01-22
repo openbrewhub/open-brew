@@ -25,4 +25,4 @@ So much happened in the last years. There are so much cool projects (such as [cr
 - Directly import your favourite receipes to your IoT-Device
 - Address all automated parts (SSRs; Pumps; ...) in this json format
 
-Have a look at the [JSON Example](/blob/master/v1.0.0/open-brew-1-0-0.example.json "JSON Example for Open Brew Version 1.0.0")
+Have a look at the [JSON Example](/v1.0.0/open-brew-1-0-0.example.json "JSON Example for Open Brew Version 1.0.0")
