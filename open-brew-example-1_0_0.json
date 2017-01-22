@@ -1,5 +1,5 @@
 {
-	"openBrewVersion": "0.0.1",
+	"openBrewVersion": "1.0.0",
 	"encoding": "UTF-8",
 	"receipe": [
 		{
@@ -67,7 +67,7 @@
 					}
 				],
 				"hop": [
-					{
+					{ //details?
 						"name": "",
 						"alphaPercentage": 90
 					}
