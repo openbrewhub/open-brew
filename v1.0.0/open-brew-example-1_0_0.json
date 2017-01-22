@@ -69,6 +69,8 @@
 				"hop": [
 					{
 						"name": "",
+						"shape":"pellet",
+						"type":"aroma",
 						"alphaPercentage": 90
 					}
 				],
