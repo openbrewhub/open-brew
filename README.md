@@ -11,4 +11,7 @@ Dear homebrew friends. There is a revolution in the beer brewing scene. Now ever
 - Free definition of brew steps
 - Support for multiple measurements, etc.
 
+#### Thougths for future versions
+- Swagger Json definition for easily defining REST-Apis
+
 Have a look at the [JSON Example](https://github.com/SeeSharp7/Open-Brew/blob/master/example_open_brew_v_0_0_1.json "JSON Example for Open Brew Version 0.0.1")
