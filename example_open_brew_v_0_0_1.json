@@ -1,23 +1,59 @@
 {
 	"openBrewVersion": "0.0.1",
 	"encoding": "UTF-8",
-	"receipes": [
+	"receipe": [
 		{
-			"ibrid": "",
-			"name": "Best tasting test beer in the world",
-			"author": "SeeSharp7",
-			"ingredients": {
+			"ibrid": 1, //idea: international beer receipe id
+			"name": [ //multi language for name of the beer receipe
+				{
+					"language":"en", //language code ISO 639-1
+					"name": "Best tasting test beer in the world"
+				},
+				{
+					"language":"de",
+					"name": "Schmackhaftestes Testbier der Welt"
+				}
+			],
+			"author":{
+				"alias":"SeeSharp7",
+				"forename":"Max",
+				"surname":"Mustermann"
+				//do we need further fields (address) here?
+			},
+			"expectedResult": { //specifications of the expected result at the end of the day
+				"totalAmount": { //total amount of beer after finishing the brew process
+					"amount":20,
+					"unit":"litre",
+					"display":"L"
+				},
+				"wort": { //original gravity or original extract
+					"amount":13.5,
+					"unit":"percent",
+					"display":"°P"
+				},
+				"bitterness":{
+					"amount":26,
+					"unit":"ibu" //are there other types than ibu?
+				},
+				"colourEbc":20.7,
+				"carbonDioxide": {
+					"amount":5,
+					"unit":"gramsPerLitre",
+					"display":"g/Liter"
+				}
+			},
+			"ingredients": { //all ingredients needed to start the brew process
 				"brewing_water": {
 					"mashing_water": {
 						"amount": 17.09,
-						"measurement": "litre"
+						"unit": "litre"
 					},
 					"sparging_water": {
 						"amount": 13.47,
-						"measurement": "litre"
+						"unit": "litre"
 					}
 				},
-				"malt": [
+				"malt": [ //the greatest stuff of all
 					{
 						"name": "Pilsener Malz",
 						"percentage": 70,
@@ -27,7 +63,16 @@
 						"percentage": 30,
 						"ebc": 23
 					}
+				],
+				"hop": [
+					{
+						"name": "",
+						"alphaPercentage": 90
+					}
 				]
+			},
+			"steps": {
+				
 			}
 		}
 	]
