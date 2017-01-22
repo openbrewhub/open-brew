@@ -8,6 +8,7 @@ there's a revolution in the beer brewing scene. Now everyone has the ability to 
 - Finalize the json example_open_brew_v_0_0_1
 - Extract json schema from example
 - Add description, required fields, enum values
+- Add GNU GPL License to repo
 - Release version 1.0.0
 
 #### Requirements:
