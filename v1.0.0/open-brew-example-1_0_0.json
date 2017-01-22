@@ -4,8 +4,8 @@
 	"receipe": [
 		{
 			"internationalBrewReceipeId": 1,
-			"version":1,
-			"type":"Amber Lager",
+			"version": 1,
+			"type": "Amber Lager",
 			"name": [
 				{
 					"language": "en",
@@ -56,7 +56,7 @@
 						"unit": "litre"
 					}
 				},
-				"malt": [
+				"grain": [
 					{
 						"name": "Pilsener Malz",
 						"percentage": 70,
@@ -73,7 +73,9 @@
 						"name": "",
 						"shape": "pellet",
 						"type": "aroma",
-						"alphaPercentage": 90
+						"alpha": 5.5,
+						"humulene": "What ist that?",
+						"use": "aroma"
 					}
 				],
 				"yeast": {
