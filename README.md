@@ -11,3 +11,5 @@ Requirements:
 - Brewsteps can be defined completely dynamic
 - Support for multiple measurements, etc.
 - Multi language support
+
+Have a look at the [JSON Example](https://github.com/SeeSharp7/Open-Brew/blob/master/example_open_brew_v_0_0_1.json "JSON Example for Open Brew Version 0.0.1")
