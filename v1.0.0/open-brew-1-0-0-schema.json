@@ -1,0 +1,595 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Root schema.",
+    "description": "An explanation about the purpose of this instance.",
+    "properties": {
+        "openBrewVersion": {
+            "type": "string",
+            "title": "OpenBrewVersion schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "1.0.0"
+        },
+        "encoding": {
+            "type": "string",
+            "title": "Encoding schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "UTF-8"
+        },
+        "receipe": {
+            "type": "array",
+            "title": "Receipe schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "items": {
+                "type": "object",
+                "title": "0 schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "properties": {
+                    "internationalBrewReceipeId": {
+                        "type": "integer",
+                        "title": "InternationalBrewReceipeId schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 1
+                    },
+                    "version": {
+                        "type": "integer",
+                        "title": "Version schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 1
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "Type schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "Amber Lager"
+                    },
+                    "name": {
+                        "type": "array",
+                        "title": "Name schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "items": {
+                            "type": "object",
+                            "title": "1 schema.",
+                            "description": "An explanation about the purpose of this instance.",
+                            "properties": {
+                                "language": {
+                                    "type": "string",
+                                    "title": "Language schema.",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "de"
+                                },
+                                "text": {
+                                    "type": "string",
+                                    "title": "Text schema.",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "Schmackhaftestes Testbier der Welt"
+                                }
+                            },
+                            "required": [
+                                "language",
+                                "text"
+                            ]
+                        }
+                    },
+                    "author": {
+                        "type": "object",
+                        "title": "Author schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "properties": {
+                            "alias": {
+                                "type": "string",
+                                "title": "Alias schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "SeeSharp7"
+                            },
+                            "forename": {
+                                "type": "string",
+                                "title": "Forename schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "Max"
+                            },
+                            "surname": {
+                                "type": "string",
+                                "title": "Surname schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "Mustermann"
+                            },
+                            "url": {
+                                "type": "string",
+                                "title": "Url schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "http://holdmybeer.de"
+                            }
+                        },
+                        "required": [
+                            "alias",
+                            "forename",
+                            "surname",
+                            "url"
+                        ]
+                    },
+                    "expectedResult": {
+                        "type": "object",
+                        "title": "ExpectedResult schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "properties": {
+                            "totalAmount": {
+                                "type": "object",
+                                "title": "TotalAmount schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "properties": {
+                                    "amount": {
+                                        "type": "integer",
+                                        "title": "Amount schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 20
+                                    },
+                                    "unit": {
+                                        "type": "string",
+                                        "title": "Unit schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "litre"
+                                    },
+                                    "display": {
+                                        "type": "string",
+                                        "title": "Display schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "L"
+                                    }
+                                },
+                                "required": [
+                                    "amount",
+                                    "unit",
+                                    "display"
+                                ]
+                            },
+                            "originalExtract": {
+                                "type": "object",
+                                "title": "OriginalExtract schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "properties": {
+                                    "amount": {
+                                        "type": "number",
+                                        "title": "Amount schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 13.5
+                                    },
+                                    "unit": {
+                                        "type": "string",
+                                        "title": "Unit schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "percent"
+                                    },
+                                    "display": {
+                                        "type": "string",
+                                        "title": "Display schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "°P"
+                                    }
+                                },
+                                "required": [
+                                    "amount",
+                                    "unit",
+                                    "display"
+                                ]
+                            },
+                            "bitterness": {
+                                "type": "object",
+                                "title": "Bitterness schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "properties": {
+                                    "amount": {
+                                        "type": "integer",
+                                        "title": "Amount schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 26
+                                    },
+                                    "unit": {
+                                        "type": "string",
+                                        "title": "Unit schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "ibu"
+                                    }
+                                },
+                                "required": [
+                                    "amount",
+                                    "unit"
+                                ]
+                            },
+                            "colourEbc": {
+                                "type": "number",
+                                "title": "ColourEbc schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 20.7
+                            },
+                            "carbonDioxide": {
+                                "type": "object",
+                                "title": "CarbonDioxide schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "properties": {
+                                    "amount": {
+                                        "type": "integer",
+                                        "title": "Amount schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 5
+                                    },
+                                    "unit": {
+                                        "type": "string",
+                                        "title": "Unit schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "gramsPerLitre"
+                                    },
+                                    "display": {
+                                        "type": "string",
+                                        "title": "Display schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "g/Liter"
+                                    }
+                                },
+                                "required": [
+                                    "amount",
+                                    "unit",
+                                    "display"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "totalAmount",
+                            "originalExtract",
+                            "bitterness",
+                            "colourEbc",
+                            "carbonDioxide"
+                        ]
+                    },
+                    "ingredients": {
+                        "type": "object",
+                        "title": "Ingredients schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "properties": {
+                            "brewingWater": {
+                                "type": "object",
+                                "title": "BrewingWater schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "properties": {
+                                    "mashing_water": {
+                                        "type": "object",
+                                        "title": "Mashing_water schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "properties": {
+                                            "amount": {
+                                                "type": "number",
+                                                "title": "Amount schema.",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": 17.09
+                                            },
+                                            "unit": {
+                                                "type": "string",
+                                                "title": "Unit schema.",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "litre"
+                                            },
+                                            "lacticAcid": {
+                                                "type": "string",
+                                                "title": "LacticAcid schema.",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "What about the lactic acid?"
+                                            }
+                                        },
+                                        "required": [
+                                            "amount",
+                                            "unit",
+                                            "lacticAcid"
+                                        ]
+                                    },
+                                    "sparging_water": {
+                                        "type": "object",
+                                        "title": "Sparging_water schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "properties": {
+                                            "amount": {
+                                                "type": "number",
+                                                "title": "Amount schema.",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": 13.47
+                                            },
+                                            "unit": {
+                                                "type": "string",
+                                                "title": "Unit schema.",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "litre"
+                                            }
+                                        },
+                                        "required": [
+                                            "amount",
+                                            "unit"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "mashing_water",
+                                    "sparging_water"
+                                ]
+                            },
+                            "grain": {
+                                "type": "array",
+                                "title": "Grain schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "items": {
+                                    "type": "object",
+                                    "title": "1 schema.",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string",
+                                            "title": "Name schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "Münchner Malz II"
+                                        },
+                                        "percentage": {
+                                            "type": "integer",
+                                            "title": "Percentage schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": 30
+                                        },
+                                        "ebc": {
+                                            "type": "integer",
+                                            "title": "Ebc schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": 23
+                                        }
+                                    },
+                                    "required": [
+                                        "name",
+                                        "percentage",
+                                        "ebc"
+                                    ]
+                                }
+                            },
+                            "hop": {
+                                "type": "array",
+                                "title": "Hop schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "items": {
+                                    "type": "object",
+                                    "title": "0 schema.",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string",
+                                            "title": "Name schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": ""
+                                        },
+                                        "shape": {
+                                            "type": "string",
+                                            "title": "Shape schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "pellet"
+                                        },
+                                        "type": {
+                                            "type": "string",
+                                            "title": "Type schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "aroma"
+                                        },
+                                        "alpha": {
+                                            "type": "number",
+                                            "title": "Alpha schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": 5.5
+                                        },
+                                        "humulene": {
+                                            "type": "string",
+                                            "title": "Humulene schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "What ist that?"
+                                        },
+                                        "use": {
+                                            "type": "string",
+                                            "title": "Use schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "aroma"
+                                        }
+                                    },
+                                    "required": [
+                                        "name",
+                                        "shape",
+                                        "type",
+                                        "alpha",
+                                        "humulene",
+                                        "use"
+                                    ]
+                                }
+                            },
+                            "yeast": {
+                                "type": "object",
+                                "title": "Yeast schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "title": "Name schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "nameofYeast"
+                                    },
+                                    "further": {
+                                        "type": "string",
+                                        "title": "Further schema.",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "What other field do we need?"
+                                    }
+                                },
+                                "required": [
+                                    "name",
+                                    "further"
+                                ]
+                            },
+                            "custom": {
+                                "type": "array",
+                                "title": "Custom schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "items": {
+                                    "type": "object",
+                                    "title": "0 schema.",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string",
+                                            "title": "Name schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "Name of custom ingredient"
+                                        },
+                                        "further": {
+                                            "type": "string",
+                                            "title": "Further schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "What else do we need?"
+                                        }
+                                    },
+                                    "required": [
+                                        "name",
+                                        "further"
+                                    ]
+                                }
+                            }
+                        },
+                        "required": [
+                            "brewingWater",
+                            "grain",
+                            "hop",
+                            "yeast",
+                            "custom"
+                        ]
+                    },
+                    "brewProcess": {
+                        "type": "object",
+                        "title": "BrewProcess schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "properties": {
+                            "maish": {
+                                "type": "array",
+                                "title": "Maish schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "items": {
+                                    "type": "object",
+                                    "title": "0 schema.",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "properties": {
+                                        "order": {
+                                            "type": "integer",
+                                            "title": "Order schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": 1
+                                        },
+                                        "rampUp": {
+                                            "type": "boolean",
+                                            "title": "RampUp schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": true
+                                        },
+                                        "temp": {
+                                            "type": "object",
+                                            "title": "Temp schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "properties": {
+                                                "amount": {
+                                                    "type": "integer",
+                                                    "title": "Amount schema.",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": 70
+                                                },
+                                                "unit": {
+                                                    "type": "string",
+                                                    "title": "Unit schema.",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "celsius"
+                                                }
+                                            },
+                                            "required": [
+                                                "amount",
+                                                "unit"
+                                            ]
+                                        },
+                                        "duration": {
+                                            "type": "integer",
+                                            "title": "Duration schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": 30
+                                        },
+                                        "stirWhileRampUp": {
+                                            "type": "boolean",
+                                            "title": "StirWhileRampUp schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": true
+                                        },
+                                        "stirWhileRest": {
+                                            "type": "boolean",
+                                            "title": "StirWhileRest schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": true
+                                        },
+                                        "remarks": {
+                                            "type": "array",
+                                            "title": "Remarks schema.",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "items": {
+                                                "type": "object",
+                                                "title": "1 schema.",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "properties": {
+                                                    "language": {
+                                                        "type": "string",
+                                                        "title": "Language schema.",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "de"
+                                                    },
+                                                    "text": {
+                                                        "type": "string",
+                                                        "title": "Text schema.",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "Das ist eine Anmerkung des Autors"
+                                                    }
+                                                },
+                                                "required": [
+                                                    "language",
+                                                    "text"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "order",
+                                        "rampUp",
+                                        "temp",
+                                        "duration",
+                                        "stirWhileRampUp",
+                                        "stirWhileRest",
+                                        "remarks"
+                                    ]
+                                }
+                            }
+                        },
+                        "required": [
+                            "maish"
+                        ]
+                    }
+                },
+                "required": [
+                    "internationalBrewReceipeId",
+                    "version",
+                    "type",
+                    "name",
+                    "author",
+                    "expectedResult",
+                    "ingredients",
+                    "brewProcess"
+                ]
+            }
+        }
+    },
+    "required": [
+        "openBrewVersion",
+        "encoding",
+        "receipe"
+    ]
+}
