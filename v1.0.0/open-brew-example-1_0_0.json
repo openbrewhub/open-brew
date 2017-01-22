@@ -3,47 +3,46 @@
 	"encoding": "UTF-8",
 	"receipe": [
 		{
-			"ibrid": 1, //idea: international beer receipe id
-			"name": [ //multi language for name of the beer receipe
+			"internationalBrewReceipeId": 1,
+			"name": [
 				{
-					"language":"en", //language code ISO 639-1
+					"language": "en",
 					"name": "Best tasting test beer in the world"
 				},
 				{
-					"language":"de",
+					"language": "de",
 					"name": "Schmackhaftestes Testbier der Welt"
 				}
 			],
-			"author":{
-				"alias":"SeeSharp7",
-				"forename":"Max",
-				"surname":"Mustermann",
-				"url":"http://holdmybeer.de"
-				//do we need further fields (address) here?
+			"author": {
+				"alias": "SeeSharp7",
+				"forename": "Max",
+				"surname": "Mustermann",
+				"url": "http://holdmybeer.de"
 			},
-			"expectedResult": { //specifications of the expected result at the end of the day
-				"totalAmount": { //total amount of beer after finishing the brew process
-					"amount":20,
-					"unit":"litre",
-					"display":"L"
+			"expectedResult": {
+				"totalAmount": {
+					"amount": 20,
+					"unit": "litre",
+					"display": "L"
 				},
-				"wort": { //original gravity or original extract
-					"amount":13.5,
-					"unit":"percent",
-					"display":"°P"
+				"originalExtract": {
+					"amount": 13.5,
+					"unit": "percent",
+					"display": "°P"
 				},
-				"bitterness":{
-					"amount":26,
-					"unit":"ibu" //are there other types than ibu?
+				"bitterness": {
+					"amount": 26,
+					"unit": "ibu"
 				},
-				"colourEbc":20.7,
+				"colourEbc": 20.7,
 				"carbonDioxide": {
-					"amount":5,
-					"unit":"gramsPerLitre",
-					"display":"g/Liter"
+					"amount": 5,
+					"unit": "gramsPerLitre",
+					"display": "g/Liter"
 				}
 			},
-			"ingredients": { //all ingredients needed to start the brew process
+			"ingredients": {
 				"brewing_water": {
 					"mashing_water": {
 						"amount": 17.09,
@@ -54,12 +53,12 @@
 						"unit": "litre"
 					}
 				},
-				"malt": [ //the greatest stuff of all
+				"malt": [
 					{
 						"name": "Pilsener Malz",
 						"percentage": 70,
 						"ebc": 3
-					}, 
+					},
 					{
 						"name": "Münchner Malz II",
 						"percentage": 30,
@@ -67,25 +66,24 @@
 					}
 				],
 				"hop": [
-					{ //details?
+					{
 						"name": "",
 						"alphaPercentage": 90
 					}
 				]
 			},
 			"brewProcess": {
-				//Here we need a gread concept
 				"maish": [
 					{
-						"order":1,
-						"rampUp":true, //duration starts when reaching target temperature
-						"temp":{
-							"amount":70,
-							"unit":"celsius"
+						"order": 1,
+						"rampUp": true,
+						"temp": {
+							"amount": 70,
+							"unit": "celsius"
 						},
-						"duration":30, //duration in minutes
-						"stirWhileRampUp":true, //stir maish while ramp-up
-						"stirWhileRest":true //stir maish after temp reached 
+						"duration": 30,
+						"stirWhileRampUp": true,
+						"stirWhileRest": true
 					}
 				]
 			}
