@@ -7,11 +7,11 @@
 			"name": [
 				{
 					"language": "en",
-					"name": "Best tasting test beer in the world"
+					"text": "Best tasting test beer in the world"
 				},
 				{
 					"language": "de",
-					"name": "Schmackhaftestes Testbier der Welt"
+					"text": "Schmackhaftestes Testbier der Welt"
 				}
 			],
 			"author": {
@@ -43,10 +43,11 @@
 				}
 			},
 			"ingredients": {
-				"brewing_water": {
+				"brewingWater": {
 					"mashing_water": {
 						"amount": 17.09,
-						"unit": "litre"
+						"unit": "litre",
+						"lacticAcid": "What about the lactic acid?"
 					},
 					"sparging_water": {
 						"amount": 13.47,
@@ -70,6 +71,16 @@
 						"name": "",
 						"alphaPercentage": 90
 					}
+				],
+				"yeast": {
+					"name": "nameofYeast",
+					"further": "What other field do we need?"
+				},
+				"custom": [
+					{
+						"name": "Name of custom ingredient",
+						"further": "What else do we need?"
+					}
 				]
 			},
 			"brewProcess": {
@@ -83,7 +94,17 @@
 						},
 						"duration": 30,
 						"stirWhileRampUp": true,
-						"stirWhileRest": true
+						"stirWhileRest": true,
+						"remarks": [
+							{
+								"language": "en",
+								"text": "This is an authors remark"
+							},
+							{
+								"language": "de",
+								"text": "Das ist eine Anmerkung des Autors"
+							}
+						]
 					}
 				]
 			}
