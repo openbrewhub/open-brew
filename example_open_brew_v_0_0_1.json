@@ -1,26 +1,34 @@
 {
-  "openBrewVersion":"0.0.1",
-  "encoding":"UTF-8",
-  "receipes": [
-    {
-      "ibrid":"",
-      "name":"Best tasting test beer in the world",
-      "author":"SeeSharp7",
-      "ingredients":{
-        "malt": [
-          { 
-            "name":"Pilsener Malz",
-            "percentage":70,
-            "ebc":3
-          },
-          {
-            "name":"Münchner Malz II",
-            "percentage":30,
-            "ebc":23
-          }
-        ]
-
-      }
-    }
-  ]
+	"openBrewVersion": "0.0.1",
+	"encoding": "UTF-8",
+	"receipes": [
+		{
+			"ibrid": "",
+			"name": "Best tasting test beer in the world",
+			"author": "SeeSharp7",
+			"ingredients": {
+				"brewing_water": {
+					"mashing_water": {
+						"amount": 17.09,
+						"measurement": "litre"
+					},
+					"sparging_water": {
+						"amount": 13.47,
+						"measurement": "litre"
+					}
+				},
+				"malt": [
+					{
+						"name": "Pilsener Malz",
+						"percentage": 70,
+						"ebc": 3
+					}, {
+						"name": "Münchner Malz II",
+						"percentage": 30,
+						"ebc": 23
+					}
+				]
+			}
+		}
+	]
 }
