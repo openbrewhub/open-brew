@@ -22,4 +22,4 @@ there's a revolution in the beer brewing scene. Now everyone has the ability to 
 - Swagger json definition
 - Central online portal for all recipes worldwide
 
-Have a look at the [JSON Example](https://github.com/SeeSharp7/Open-Brew/blob/master/open-brew-example-1_0_0.json "JSON Example for Open Brew Version 1.0.0")
+Have a look at the [JSON Example](https://github.com/SeeSharp7/Open-Brew/blob/master/v1.0.0/open-brew-example-1_0_0.json "JSON Example for Open Brew Version 1.0.0")
