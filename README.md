@@ -1,5 +1,5 @@
 # Open-Brew
-Let's design an international json-based standard format for brew receipes
+Let's design an international json-based standard format, used for the exchange of beer brewing receipes
 
 Hey homebrew friends out there,  
 there's a revolution in the beer brewing scene. Now everyone has the ability to brew a custom beer. Everyone can make own experiences and develop great receipes. The last time I've read a lot about it. So much happened in the last years. But I still miss an offical standard for brewing receipes: There are so much cool projects (such as [craftbeerpi](https://github.com/Manuel83/craftbeerpi "Goto craftbeerpi"), [kleiner-brauhelfer](https://github.com/Gremmel/kleiner-brauhelfer "Goto kleiner-brauhelfer") and so on) but all of them use individual data exchange formats like sql and so on. Let us design a worldwide standard format in json schema here. Let's make the default for home brewing automation. Let's make it possible, sharing brew receipes across the world. Contributors welcome!

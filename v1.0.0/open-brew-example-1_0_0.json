@@ -4,6 +4,8 @@
 	"receipe": [
 		{
 			"internationalBrewReceipeId": 1,
+			"version":1,
+			"type":"Amber Lager",
 			"name": [
 				{
 					"language": "en",
@@ -69,8 +71,8 @@
 				"hop": [
 					{
 						"name": "",
-						"shape":"pellet",
-						"type":"aroma",
+						"shape": "pellet",
+						"type": "aroma",
 						"alphaPercentage": 90
 					}
 				],
