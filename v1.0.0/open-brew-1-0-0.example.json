@@ -122,11 +122,9 @@
 						"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
 					}
 				],
-				"shape": "pellet",
-				"type": "aroma",
 				"alpha": 5.5,
-				"humulene": "What ist that?",
-				"use": "aroma"
+				"shape": "pellet",
+				"type": "aroma"
 			}
 		],
 		"customs": [
