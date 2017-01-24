@@ -15,6 +15,16 @@
 					"text": "Schmackhaftestes Testbier der Welt"
 				}
 			],
+			"descriptions": [
+				{
+					"language": "en",
+					"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
+				},
+				{
+					"language": "de",
+					"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
+				}
+			],
 			"author": {
 				"alias": "SeeSharp7",
 				"forename": "Max",
