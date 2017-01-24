@@ -5,6 +5,7 @@ The beer brewing scene changes. Since the craftbeer revolution came along, brewi
 
 #### Steps to version 1.0.0
 - Finalize the json example (open-brew-1-0-0.example.json)
+- Documentation in Wiki (See progress here [Wiki](https://github.com/SeeSharp7/Open-Brew/wiki))
 - Extract json schema from example
 - Add description, required fields, enum values
 - Add GNU GPL License to repo
