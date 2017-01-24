@@ -15,6 +15,7 @@ The beer brewing scene changes. Since the craftbeer revolution came along, brewi
 - Json Schema as definition format
 - Versioning for further development
 - Multi language support
+- Automation details possible but not required
 - Definement of multiple recipes in one document
 - Free definition of brew steps
 - Support for multiple units, etc.
