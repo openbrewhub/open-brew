@@ -1,7 +1,7 @@
 # Open-Brew
 Let's design an international json-based standard format, used for exchange and automation of beer brewing recipes
 
-The beer brewing scene changes. Since the craftbeer revolution came along, brewing beer became a popular sport again. Everyone has the ability to brew a custom beer. Everyone can make experiences and develop own recipes. And that's great. But the distribution of these recipes is a disaster. There are so much cool projects (such as [craftbeerpi](https://github.com/Manuel83/craftbeerpi "Goto craftbeerpi"), [kleiner-brauhelfer](https://github.com/Gremmel/kleiner-brauhelfer "Goto kleiner-brauhelfer") and so on) but all of them use individual data exchange formats like sql and so on. So we still miss an offical, fully featured standard for brewing recipes. Let us design a worldwide standard format in json schema together. Let's make the default for home brewing automation. Let's make it possible, sharing brew recipes across the world. Everyone with some experience in brewing and json is welcome! 
+The beer brewing scene changes. Since the craftbeer revolution came along, brewing beer became a popular sport again. Everyone has the ability to brew a custom beer. Everyone can make experiences and develop own recipes. And that's great. But the distribution of these recipes is a disaster. There are so much cool projects (such as [craftbeerpi](https://github.com/Manuel83/craftbeerpi "Goto craftbeerpi"), [kleiner-brauhelfer](https://github.com/Gremmel/kleiner-brauhelfer "Goto kleiner-brauhelfer") and so on) but all of them use individual data exchange formats like sql. So we still miss an offical, fully featured standard for brewing recipes. Let us design a worldwide standard format in json schema together. Let's make the default for home brewing automation. Let's make it possible, sharing brew recipes across the world. Everyone with some experience in brewing and json is welcome! 
 
 #### Steps to version 1.0.0
 - Finalize the [JSON Example](/v1.0.0/open-brew-1-0-0.example.json "JSON Example for Open Brew Version 1.0.0")
@@ -18,6 +18,7 @@ The beer brewing scene changes. Since the craftbeer revolution came along, brewi
 - Automation details possible but not required
 - Definement of multiple recipes in one document
 - Free definition of brew steps
+- Enums for often used values
 - Support for multiple units, etc.
 
 #### Thoughts for future versions
