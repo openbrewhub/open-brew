@@ -35,6 +35,7 @@
 		"ratioUnit": "gramsPerLiter"
 	},
 	"author": {
+		"private": true,
 		"brewery": "Hopfen Doldis",
 		"brewMaster": "Max Mustermann",
 		"url": "http://holdmybeer.de",
