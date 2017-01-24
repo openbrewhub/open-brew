@@ -24,6 +24,6 @@ The beer brewing scene changes. Since the craftbeer revolution came along, brewi
 - Swagger json definition
 - Library for extrapolating amounts
 - Minimum requirements of brew equipment (container size, ...)
-- Central online portal for all recipes worldwide
+- Central online portal for all recipes worldwide (open-brew-hub.com)
 - Directly import your favourite recipes to your IoT-Device
 - Address all automated parts (SSRs; Pumps; ...) in this json format
