@@ -1,9 +1,8 @@
 {
 	"openBrewVersion": "1.0.0",
 	"encoding": "UTF-8",
-	"receipe": [
+	"recipes": [
 		{
-			"internationalBrewReceipeId": 1,
 			"version": 1,
 			"type": "Amber Lager",
 			"name": [
