@@ -66,6 +66,11 @@
 				"volumeUnit": "liter"
 			}
 		},
+		"yeast": {
+			"name": "nameofYeast",
+			"further": "What other fields do we need?",
+			"amount": 2
+		},
 		"grains": [
 			{
 				"name": "Pilsener Malz",
@@ -124,10 +129,14 @@
 				"use": "aroma"
 			}
 		],
-		"yeast": {
-			"name": "nameofYeast",
-			"further": "What other field do we need?"
-		}
+		"customs": [
+			{
+				"name": "Sweet honey, dude",
+				"amount": 25,
+				"weightUnit": "gram",
+				"addWhen": "maish"
+			}
+		]
 	},
 	"brewSteps": [
 		{
@@ -135,7 +144,7 @@
 			"step": "maish",
 			"subSteps": [
 				{
-					"stepName": "Ramp Up",
+					"stepName": "Ramp Up - Initial",
 					"stirWhileRampUp": true,
 					"targetTemp": {
 						"amount": 70,
@@ -169,7 +178,7 @@
 			"step": "lautering",
 			"subSteps": [
 				{
-					"stepName": "Ramp Up",
+					"stepName": "Whatever... i'm trying!",
 					"stirWhileRampUp": true,
 					"targetTemp": {
 						"amount": 70,
