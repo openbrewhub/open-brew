@@ -21,7 +21,7 @@ The beer brewing scene changes. Since the craftbeer revolution came along, brewi
 
 #### Thoughts for future versions
 - Swagger json definition
+- Library for extrapolating amounts
 - Central online portal for all recipes worldwide
 - Directly import your favourite recipes to your IoT-Device
 - Address all automated parts (SSRs; Pumps; ...) in this json format
-
