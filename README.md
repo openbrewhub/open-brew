@@ -16,7 +16,6 @@ The beer brewing scene changes. Since the craftbeer revolution came along, brewi
 - Versioning for further development
 - Multi language support
 - Automation details possible but not required
-- Definement of multiple recipes in one document
 - Free definition of brew steps
 - Enums for often used values
 - Support for multiple units, etc.

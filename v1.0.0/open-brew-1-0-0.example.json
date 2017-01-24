@@ -1,170 +1,207 @@
 {
 	"openBrewVersion": "1.0.0",
 	"encoding": "UTF-8",
-	"recipes": [
+	"recipeVersion": 1,
+	"brewStyle": "Amber Lager",
+	"totalAmount": {
+		"amount": 20,
+		"volumeUnit": "liter"
+	},
+	"originalWort": {
+		"amount": 13.5,
+		"ratioUnit": "percent"
+	},
+	"hightGravityFactor": {
+		"amount": 0,
+		"ratioUnit": "percent"
+	},
+	"bitterness": {
+		"amount": 26,
+		"tasteUnit": "ibu"
+	},
+	"carbonDioxide": {
+		"amount": 5,
+		"ratioUnit": "gramsPerLiter"
+	},
+	"names": [
 		{
-			"version": 1,
-			"type": "Amber Lager",
-			"names": [
-				{
-					"language": "en",
-					"text": "Best tasting test beer in the world"
-				}, {
-					"language": "de",
-					"text": "Schmackhaftestes Testbier der Welt"
-				}
-			],
-			"descriptions": [
-				{
-					"language": "en",
-					"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
-				}, {
-					"language": "de",
-					"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
-				}
-			],
-			"author": {
-				"brewery": "Hopfen Doldis",
-				"brewMaster": "Max Mustermann",
-				"url": "http://holdmybeer.de",
-				"address": {
-					"street": "Examplestreet",
-					"houseNumber": "14a",
-					"zip": "90411",
-					"city": "Nuremberg",
-					"country": "Germany"
-				},
-				"geo": {
-					"latitude": 99.123,
-					"longitude": 47.123
-				}
+			"language": "en",
+			"text": "Best tasting test beer in the world"
+		},
+		{
+			"language": "de",
+			"text": "Schmackhaftestes Testbier der Welt"
+		}
+	],
+	"descriptions": [
+		{
+			"language": "en",
+			"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
+		},
+		{
+			"language": "de",
+			"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
+		}
+	],
+	"author": {
+		"brewery": "Hopfen Doldis",
+		"brewMaster": "Max Mustermann",
+		"url": "http://holdmybeer.de",
+		"phone": "+49 911 123456789",
+		"address": {
+			"street": "Examplestreet",
+			"houseNumber": "14a",
+			"zip": "90411",
+			"city": "Nuremberg",
+			"country": "Germany"
+		},
+		"geo": {
+			"latitude": 99.123,
+			"longitude": 47.123
+		}
+	},
+	"ingredients": {
+		"water": {
+			"alkalinity": {
+				"amount": 1.1,
+				"chemicalUnit": "dh"
 			},
-			"expectedResult": {
-				"totalAmount": {
-					"amount": 20,
-					"volumeUnit": "liter"
-				},
-				"originalExtract": {
-					"amount": 13.5,
-					"ratioUnit": "percent"
-				},
-				"bitterness": {
-					"amount": 26,
-					"tasteUnit": "ibu"
-				},
-				"colourEbc": 20.7,
-				"carbonDioxide": {
-					"amount": 5,
-					"ratioUnit": "gramsPerLiter"
-				}
+			"mashingWater": {
+				"amount": 17.09,
+				"volumeUnit": "liter"
 			},
-			"ingredients": {
-				"brewingWater": {
-					"mashing_water": {
-						"amount": 17.09,
-						"volumeUnit": "liter",
-						"lacticAcid": "What about the lactic acid?"
+			"spargingWater": {
+				"amount": 13.47,
+				"volumeUnit": "liter"
+			}
+		},
+		"grains": [
+			{
+				"name": "Pilsener Malz",
+				"descriptions": [
+					{
+						"language": "en",
+						"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
 					},
-					"sparging_water": {
-						"amount": 13.47,
-						"volumeUnit": "liter"
-					}
-				},
-				"grains": [
 					{
-						"name": "Pilsener Malz",
-						"percentage": 70,
-						"ebc": 3
-					}, {
-						"name": "Münchner Malz II",
-						"percentage": 30,
-						"ebc": 23
+						"language": "de",
+						"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
 					}
 				],
-				"hops": [
-					{
-						"name": "Spalter Aromahopfen",
-						"shape": "pellet",
-						"type": "aroma",
-						"alpha": 5.5,
-						"humulene": "What ist that?",
-						"use": "aroma"
-					}
-				],
-				"yeast": {
-					"name": "nameofYeast",
-					"further": "What other field do we need?"
-				},
-				"customIngredients": [
-					{
-						"name": "Name of custom ingredient",
-						"further": "What else do we need?"
-					}
-				]
+				"percentage": 70,
+				"colour": {
+					"amount": 23,
+					"colourUnit": "ebc"
+				}
 			},
-			"brewSteps": [
+			{
+				"name": "Münchner Malz II",
+				"descriptions": [
+					{
+						"language": "en",
+						"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
+					},
+					{
+						"language": "de",
+						"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
+					}
+				],
+				"percentage": 30,
+				"colour": {
+					"amount": 23,
+					"colourUnit": "ebc"
+				}
+			}
+		],
+		"hops": [
+			{
+				"name": "Spalter Aromahopfen",
+				"descriptions": [
+					{
+						"language": "en",
+						"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
+					},
+					{
+						"language": "de",
+						"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
+					}
+				],
+				"shape": "pellet",
+				"type": "aroma",
+				"alpha": 5.5,
+				"humulene": "What ist that?",
+				"use": "aroma"
+			}
+		],
+		"yeast": {
+			"name": "nameofYeast",
+			"further": "What other field do we need?"
+		}
+	},
+	"brewSteps": [
+		{
+			"sequence": 1,
+			"step": "maish",
+			"subSteps": [
 				{
-					"sequence": 1,
-					"step": "maish",
-					"subSteps": [
+					"stepName": "Ramp Up",
+					"stirWhileRampUp": true,
+					"targetTemp": {
+						"amount": 70,
+						"tempUnit": "celsius"
+					},
+					"timeOnTargetTemp": {
+						"amount": 60,
+						"timeUnit": "minute"
+					},
+					"container": "maishContainer",
+					"module": "waterpump",
+					"interruptModule": "filllevelsensor",
+					"interruptMinValue": "",
+					"interruptFetchInterval": 10000,
+					"action": "switch",
+					"remarks": [
 						{
-							"stepName": "Ramp Up",
-							"stirWhileRampUp": true,
-							"targetTemp": {
-								"amount": 70,
-								"tempUnit": "celsius"
-							},
-							"timeOnTargetTemp": {
-								"amount": 60,
-								"timeUnit": "minute"
-							},
-							"container": "maishContainer",
-							"module": "waterpump",
-							"interruptModule": "filllevelsensor",
-							"interruptMinValue": "",
-							"interruptFetchInterval": 10000,
-							"action": "switch",
-							"remarks": [
-								{
-									"language": "en",
-									"text": "This is an authors remark"
-								}, {
-									"language": "de",
-									"text": "Das ist eine Anmerkung des Autors"
-								}
-							]
+							"language": "en",
+							"text": "This is an authors remark"
+						},
+						{
+							"language": "de",
+							"text": "Das ist eine Anmerkung des Autors"
 						}
 					]
-				}, {
-					"sequence": 2,
-					"step": "lautering",
-					"subSteps": [
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"step": "lautering",
+			"subSteps": [
+				{
+					"stepName": "Ramp Up",
+					"stirWhileRampUp": true,
+					"targetTemp": {
+						"amount": 70,
+						"TempUnit": "celsius"
+					},
+					"timeOnTargetTemp": {
+						"amount": 60,
+						"timeUnit": "minute"
+					},
+					"container": "maishContainer",
+					"module": "waterpump",
+					"interruptModule": "filllevelsensor",
+					"interruptMinValue": "",
+					"interruptFetchInterval": 10000,
+					"action": "switch",
+					"remarks": [
 						{
-							"stepName": "Ramp Up",
-							"stirWhileRampUp": true,
-							"targetTemp": {
-								"amount": 70,
-								"TempUnit": "celsius"
-							},
-							"timeOnTargetTemp": {
-								"amount": 60,
-								"timeUnit": "minute"
-							},
-							"container": "maishContainer",
-							"module": "waterpump",
-							"interruptModule": "filllevelsensor",
-							"interruptMinValue": "",
-							"interruptFetchInterval": 10000,
-							"action": "switch",
-							"remarks": [
-								{
-									"language": "en",
-									"text": "This is an authors remark"
-								}, {
-									"language": "de",
-									"text": "Das ist eine Anmerkung des Autors"
-								}
-							]
+							"language": "en",
+							"text": "This is an authors remark"
+						},
+						{
+							"language": "de",
+							"text": "Das ist eine Anmerkung des Autors"
 						}
 					]
 				}
