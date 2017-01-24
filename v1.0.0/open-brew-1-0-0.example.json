@@ -42,7 +42,7 @@
 			"expectedResult": {
 				"totalAmount": {
 					"amount": 20,
-					"volumeUnit": "litre"
+					"volumeUnit": "liter"
 				},
 				"originalExtract": {
 					"amount": 13.5,
@@ -62,12 +62,12 @@
 				"brewingWater": {
 					"mashing_water": {
 						"amount": 17.09,
-						"volumeUnit": "litre",
+						"volumeUnit": "liter",
 						"lacticAcid": "What about the lactic acid?"
 					},
 					"sparging_water": {
 						"amount": 13.47,
-						"volumeUnit": "litre"
+						"volumeUnit": "liter"
 					}
 				},
 				"grains": [
