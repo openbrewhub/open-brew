@@ -9,8 +9,7 @@
 				{
 					"language": "en",
 					"text": "Best tasting test beer in the world"
-				},
-				{
+				}, {
 					"language": "de",
 					"text": "Schmackhaftestes Testbier der Welt"
 				}
@@ -19,50 +18,56 @@
 				{
 					"language": "en",
 					"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
-				},
-				{
+				}, {
 					"language": "de",
 					"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
 				}
 			],
 			"author": {
-				"alias": "SeeSharp7",
-				"forename": "Max",
-				"surname": "Mustermann",
-				"url": "http://holdmybeer.de"
+				"brewery": "Hopfen Doldis",
+				"brewMaster": "Max Mustermann",
+				"url": "http://holdmybeer.de",
+				"address": {
+					"street": "Examplestreet",
+					"houseNumber": "14a",
+					"zip": "90411",
+					"city": "Nuremberg",
+					"country": "Germany"
+				},
+				"geo": {
+					"latitude": 99.123,
+					"longitude": 47.123
+				}
 			},
 			"expectedResult": {
 				"totalAmount": {
 					"amount": 20,
-					"unit": "litre",
-					"display": "L"
+					"volumeUnit": "litre"
 				},
 				"originalExtract": {
 					"amount": 13.5,
-					"unit": "percent",
-					"display": "°P"
+					"ratioUnit": "percent"
 				},
 				"bitterness": {
 					"amount": 26,
-					"unit": "ibu"
+					"tasteUnit": "ibu"
 				},
 				"colourEbc": 20.7,
 				"carbonDioxide": {
 					"amount": 5,
-					"unit": "gramsPerLitre",
-					"display": "g/Liter"
+					"ratioUnit": "gramsPerLiter"
 				}
 			},
 			"ingredients": {
 				"brewingWater": {
 					"mashing_water": {
 						"amount": 17.09,
-						"unit": "litre",
+						"volumeUnit": "litre",
 						"lacticAcid": "What about the lactic acid?"
 					},
 					"sparging_water": {
 						"amount": 13.47,
-						"unit": "litre"
+						"volumeUnit": "litre"
 					}
 				},
 				"grains": [
@@ -70,8 +75,7 @@
 						"name": "Pilsener Malz",
 						"percentage": 70,
 						"ebc": 3
-					},
-					{
+					}, {
 						"name": "Münchner Malz II",
 						"percentage": 30,
 						"ebc": 23
@@ -79,7 +83,7 @@
 				],
 				"hops": [
 					{
-						"name": "",
+						"name": "Spalter Aromahopfen",
 						"shape": "pellet",
 						"type": "aroma",
 						"alpha": 5.5,
@@ -98,31 +102,73 @@
 					}
 				]
 			},
-			"brewProcess": {
-				"maish": [
-					{
-						"order": 1,
-						"rampUp": true,
-						"temp": {
-							"amount": 70,
-							"unit": "celsius"
-						},
-						"duration": 30,
-						"stirWhileRampUp": true,
-						"stirWhileRest": true,
-						"remarks": [
-							{
-								"language": "en",
-								"text": "This is an authors remark"
+			"brewSteps": [
+				{
+					"sequence": 1,
+					"step": "maish",
+					"subSteps": [
+						{
+							"stepName": "Ramp Up",
+							"stirWhileRampUp": true,
+							"targetTemp": {
+								"amount": 70,
+								"tempUnit": "celsius"
 							},
-							{
-								"language": "de",
-								"text": "Das ist eine Anmerkung des Autors"
-							}
-						]
-					}
-				]
-			}
+							"timeOnTargetTemp": {
+								"amount": 60,
+								"timeUnit": "minute"
+							},
+							"container": "maishContainer",
+							"module": "waterpump",
+							"interruptModule": "filllevelsensor",
+							"interruptMinValue": "",
+							"interruptFetchInterval": 10000,
+							"action": "switch",
+							"remarks": [
+								{
+									"language": "en",
+									"text": "This is an authors remark"
+								}, {
+									"language": "de",
+									"text": "Das ist eine Anmerkung des Autors"
+								}
+							]
+						}
+					]
+				}, {
+					"sequence": 2,
+					"step": "lautering",
+					"subSteps": [
+						{
+							"stepName": "Ramp Up",
+							"stirWhileRampUp": true,
+							"targetTemp": {
+								"amount": 70,
+								"TempUnit": "celsius"
+							},
+							"timeOnTargetTemp": {
+								"amount": 60,
+								"timeUnit": "minute"
+							},
+							"container": "maishContainer",
+							"module": "waterpump",
+							"interruptModule": "filllevelsensor",
+							"interruptMinValue": "",
+							"interruptFetchInterval": 10000,
+							"action": "switch",
+							"remarks": [
+								{
+									"language": "en",
+									"text": "This is an authors remark"
+								}, {
+									"language": "de",
+									"text": "Das ist eine Anmerkung des Autors"
+								}
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }
