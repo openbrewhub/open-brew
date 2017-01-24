@@ -32,7 +32,6 @@ The beer brewing scene changes. Since the craftbeer revolution came along, brewi
 Here we go with some documentation. Each field will appear by it's name, type and description.
 
 ## Supported Unit Types
-***
 Some elements need a concrete specification of their unit types. The supported unit types for the respective element are  defined below.  
 
 | Element    | Type   | Possible Values                   |
@@ -46,7 +45,6 @@ Some elements need a concrete specification of their unit types. The supported u
 | chemicalUnit| string | dh, ppm                           |
 
 ## Elements in order of their apperance
-***
 #### Document Body  
 | Element            | Type                                                  | Description                                                                                                                        |
 |--------------------|-------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
