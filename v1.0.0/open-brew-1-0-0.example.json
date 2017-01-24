@@ -65,7 +65,7 @@
 						"unit": "litre"
 					}
 				},
-				"grain": [
+				"grains": [
 					{
 						"name": "Pilsener Malz",
 						"percentage": 70,
@@ -77,7 +77,7 @@
 						"ebc": 23
 					}
 				],
-				"hop": [
+				"hops": [
 					{
 						"name": "",
 						"shape": "pellet",
@@ -91,7 +91,7 @@
 					"name": "nameofYeast",
 					"further": "What other field do we need?"
 				},
-				"custom": [
+				"customIngredients": [
 					{
 						"name": "Name of custom ingredient",
 						"further": "What else do we need?"
