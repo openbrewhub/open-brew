@@ -1,7 +1,7 @@
 {
 	"openBrewVersion": "1.0.0",
 	"encoding": "UTF-8",
-	"recipeName": "International Recipe Name: Hausbräu Schnerpfensang zum Fürstentum des Exzesses",
+	"recipeName": "Hausbräu Schnerpfensang zum Fürstentum des Exzesses",
 	"recipeVersion": 1,
 	"brewStyle": "Amber Lager",
 	"descriptions": [
@@ -130,8 +130,10 @@
 		"customs": [
 			{
 				"name": "Sweet honey, dude",
-				"amount": 25,
-				"weightUnit": "gram",
+				"customWeight": {
+					"amount": 25,
+					"weightUnit": "gram"
+				},
 				"addWhen": "maish"
 			}
 		]
