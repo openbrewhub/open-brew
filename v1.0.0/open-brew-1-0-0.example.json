@@ -1,8 +1,19 @@
 {
 	"openBrewVersion": "1.0.0",
 	"encoding": "UTF-8",
+	"recipeName": "International Recipe Name: Hausbräu Schnerpfensang zum Fürstentum des Exzesses",
 	"recipeVersion": 1,
 	"brewStyle": "Amber Lager",
+	"descriptions": [
+		{
+			"language": "en",
+			"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
+		},
+		{
+			"language": "de",
+			"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
+		}
+	],
 	"totalAmount": {
 		"amount": 20,
 		"volumeUnit": "liter"
@@ -23,26 +34,6 @@
 		"amount": 5,
 		"ratioUnit": "gramsPerLiter"
 	},
-	"names": [
-		{
-			"language": "en",
-			"text": "Best tasting test beer in the world"
-		},
-		{
-			"language": "de",
-			"text": "Schmackhaftestes Testbier der Welt"
-		}
-	],
-	"descriptions": [
-		{
-			"language": "en",
-			"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
-		},
-		{
-			"language": "de",
-			"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
-		}
-	],
 	"author": {
 		"brewery": "Hopfen Doldis",
 		"brewMaster": "Max Mustermann",
