@@ -1,595 +1,652 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "type": "object",
-    "title": "Root schema.",
-    "description": "An explanation about the purpose of this instance.",
-    "properties": {
-        "openBrewVersion": {
-            "type": "string",
-            "title": "OpenBrewVersion schema.",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "1.0.0"
-        },
-        "encoding": {
-            "type": "string",
-            "title": "Encoding schema.",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "UTF-8"
-        },
-        "receipe": {
-            "type": "array",
-            "title": "Receipe schema.",
-            "description": "An explanation about the purpose of this instance.",
-            "items": {
-                "type": "object",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance.",
-                "properties": {
-                    "internationalBrewReceipeId": {
-                        "type": "integer",
-                        "title": "InternationalBrewReceipeId schema.",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": 1
-                    },
-                    "version": {
-                        "type": "integer",
-                        "title": "Version schema.",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": 1
-                    },
-                    "type": {
-                        "type": "string",
-                        "title": "Type schema.",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": "Amber Lager"
-                    },
-                    "name": {
-                        "type": "array",
-                        "title": "Name schema.",
-                        "description": "An explanation about the purpose of this instance.",
-                        "items": {
-                            "type": "object",
-                            "title": "1 schema.",
-                            "description": "An explanation about the purpose of this instance.",
-                            "properties": {
-                                "language": {
-                                    "type": "string",
-                                    "title": "Language schema.",
-                                    "description": "An explanation about the purpose of this instance.",
-                                    "default": "de"
-                                },
-                                "text": {
-                                    "type": "string",
-                                    "title": "Text schema.",
-                                    "description": "An explanation about the purpose of this instance.",
-                                    "default": "Schmackhaftestes Testbier der Welt"
-                                }
-                            },
-                            "required": [
-                                "language",
-                                "text"
-                            ]
-                        }
-                    },
-                    "author": {
-                        "type": "object",
-                        "title": "Author schema.",
-                        "description": "An explanation about the purpose of this instance.",
-                        "properties": {
-                            "alias": {
-                                "type": "string",
-                                "title": "Alias schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "default": "SeeSharp7"
-                            },
-                            "forename": {
-                                "type": "string",
-                                "title": "Forename schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "default": "Max"
-                            },
-                            "surname": {
-                                "type": "string",
-                                "title": "Surname schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "default": "Mustermann"
-                            },
-                            "url": {
-                                "type": "string",
-                                "title": "Url schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "default": "http://holdmybeer.de"
-                            }
-                        },
-                        "required": [
-                            "alias",
-                            "forename",
-                            "surname",
-                            "url"
-                        ]
-                    },
-                    "expectedResult": {
-                        "type": "object",
-                        "title": "ExpectedResult schema.",
-                        "description": "An explanation about the purpose of this instance.",
-                        "properties": {
-                            "totalAmount": {
-                                "type": "object",
-                                "title": "TotalAmount schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "properties": {
-                                    "amount": {
-                                        "type": "integer",
-                                        "title": "Amount schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": 20
-                                    },
-                                    "unit": {
-                                        "type": "string",
-                                        "title": "Unit schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": "litre"
-                                    },
-                                    "display": {
-                                        "type": "string",
-                                        "title": "Display schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": "L"
-                                    }
-                                },
-                                "required": [
-                                    "amount",
-                                    "unit",
-                                    "display"
-                                ]
-                            },
-                            "originalExtract": {
-                                "type": "object",
-                                "title": "OriginalExtract schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "properties": {
-                                    "amount": {
-                                        "type": "number",
-                                        "title": "Amount schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": 13.5
-                                    },
-                                    "unit": {
-                                        "type": "string",
-                                        "title": "Unit schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": "percent"
-                                    },
-                                    "display": {
-                                        "type": "string",
-                                        "title": "Display schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": "°P"
-                                    }
-                                },
-                                "required": [
-                                    "amount",
-                                    "unit",
-                                    "display"
-                                ]
-                            },
-                            "bitterness": {
-                                "type": "object",
-                                "title": "Bitterness schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "properties": {
-                                    "amount": {
-                                        "type": "integer",
-                                        "title": "Amount schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": 26
-                                    },
-                                    "unit": {
-                                        "type": "string",
-                                        "title": "Unit schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": "ibu"
-                                    }
-                                },
-                                "required": [
-                                    "amount",
-                                    "unit"
-                                ]
-                            },
-                            "colourEbc": {
-                                "type": "number",
-                                "title": "ColourEbc schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "default": 20.7
-                            },
-                            "carbonDioxide": {
-                                "type": "object",
-                                "title": "CarbonDioxide schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "properties": {
-                                    "amount": {
-                                        "type": "integer",
-                                        "title": "Amount schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": 5
-                                    },
-                                    "unit": {
-                                        "type": "string",
-                                        "title": "Unit schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": "gramsPerLitre"
-                                    },
-                                    "display": {
-                                        "type": "string",
-                                        "title": "Display schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": "g/Liter"
-                                    }
-                                },
-                                "required": [
-                                    "amount",
-                                    "unit",
-                                    "display"
-                                ]
-                            }
-                        },
-                        "required": [
-                            "totalAmount",
-                            "originalExtract",
-                            "bitterness",
-                            "colourEbc",
-                            "carbonDioxide"
-                        ]
-                    },
-                    "ingredients": {
-                        "type": "object",
-                        "title": "Ingredients schema.",
-                        "description": "An explanation about the purpose of this instance.",
-                        "properties": {
-                            "brewingWater": {
-                                "type": "object",
-                                "title": "BrewingWater schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "properties": {
-                                    "mashing_water": {
-                                        "type": "object",
-                                        "title": "Mashing_water schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "properties": {
-                                            "amount": {
-                                                "type": "number",
-                                                "title": "Amount schema.",
-                                                "description": "An explanation about the purpose of this instance.",
-                                                "default": 17.09
-                                            },
-                                            "unit": {
-                                                "type": "string",
-                                                "title": "Unit schema.",
-                                                "description": "An explanation about the purpose of this instance.",
-                                                "default": "litre"
-                                            },
-                                            "lacticAcid": {
-                                                "type": "string",
-                                                "title": "LacticAcid schema.",
-                                                "description": "An explanation about the purpose of this instance.",
-                                                "default": "What about the lactic acid?"
-                                            }
-                                        },
-                                        "required": [
-                                            "amount",
-                                            "unit",
-                                            "lacticAcid"
-                                        ]
-                                    },
-                                    "sparging_water": {
-                                        "type": "object",
-                                        "title": "Sparging_water schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "properties": {
-                                            "amount": {
-                                                "type": "number",
-                                                "title": "Amount schema.",
-                                                "description": "An explanation about the purpose of this instance.",
-                                                "default": 13.47
-                                            },
-                                            "unit": {
-                                                "type": "string",
-                                                "title": "Unit schema.",
-                                                "description": "An explanation about the purpose of this instance.",
-                                                "default": "litre"
-                                            }
-                                        },
-                                        "required": [
-                                            "amount",
-                                            "unit"
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "mashing_water",
-                                    "sparging_water"
-                                ]
-                            },
-                            "grain": {
-                                "type": "array",
-                                "title": "Grain schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "items": {
-                                    "type": "object",
-                                    "title": "1 schema.",
-                                    "description": "An explanation about the purpose of this instance.",
-                                    "properties": {
-                                        "name": {
-                                            "type": "string",
-                                            "title": "Name schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "Münchner Malz II"
-                                        },
-                                        "percentage": {
-                                            "type": "integer",
-                                            "title": "Percentage schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": 30
-                                        },
-                                        "ebc": {
-                                            "type": "integer",
-                                            "title": "Ebc schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": 23
-                                        }
-                                    },
-                                    "required": [
-                                        "name",
-                                        "percentage",
-                                        "ebc"
-                                    ]
-                                }
-                            },
-                            "hop": {
-                                "type": "array",
-                                "title": "Hop schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "items": {
-                                    "type": "object",
-                                    "title": "0 schema.",
-                                    "description": "An explanation about the purpose of this instance.",
-                                    "properties": {
-                                        "name": {
-                                            "type": "string",
-                                            "title": "Name schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": ""
-                                        },
-                                        "shape": {
-                                            "type": "string",
-                                            "title": "Shape schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "pellet"
-                                        },
-                                        "type": {
-                                            "type": "string",
-                                            "title": "Type schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "aroma"
-                                        },
-                                        "alpha": {
-                                            "type": "number",
-                                            "title": "Alpha schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": 5.5
-                                        },
-                                        "humulene": {
-                                            "type": "string",
-                                            "title": "Humulene schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "What ist that?"
-                                        },
-                                        "use": {
-                                            "type": "string",
-                                            "title": "Use schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "aroma"
-                                        }
-                                    },
-                                    "required": [
-                                        "name",
-                                        "shape",
-                                        "type",
-                                        "alpha",
-                                        "humulene",
-                                        "use"
-                                    ]
-                                }
-                            },
-                            "yeast": {
-                                "type": "object",
-                                "title": "Yeast schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "properties": {
-                                    "name": {
-                                        "type": "string",
-                                        "title": "Name schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": "nameofYeast"
-                                    },
-                                    "further": {
-                                        "type": "string",
-                                        "title": "Further schema.",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": "What other field do we need?"
-                                    }
-                                },
-                                "required": [
-                                    "name",
-                                    "further"
-                                ]
-                            },
-                            "custom": {
-                                "type": "array",
-                                "title": "Custom schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "items": {
-                                    "type": "object",
-                                    "title": "0 schema.",
-                                    "description": "An explanation about the purpose of this instance.",
-                                    "properties": {
-                                        "name": {
-                                            "type": "string",
-                                            "title": "Name schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "Name of custom ingredient"
-                                        },
-                                        "further": {
-                                            "type": "string",
-                                            "title": "Further schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "What else do we need?"
-                                        }
-                                    },
-                                    "required": [
-                                        "name",
-                                        "further"
-                                    ]
-                                }
-                            }
-                        },
-                        "required": [
-                            "brewingWater",
-                            "grain",
-                            "hop",
-                            "yeast",
-                            "custom"
-                        ]
-                    },
-                    "brewProcess": {
-                        "type": "object",
-                        "title": "BrewProcess schema.",
-                        "description": "An explanation about the purpose of this instance.",
-                        "properties": {
-                            "maish": {
-                                "type": "array",
-                                "title": "Maish schema.",
-                                "description": "An explanation about the purpose of this instance.",
-                                "items": {
-                                    "type": "object",
-                                    "title": "0 schema.",
-                                    "description": "An explanation about the purpose of this instance.",
-                                    "properties": {
-                                        "order": {
-                                            "type": "integer",
-                                            "title": "Order schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": 1
-                                        },
-                                        "rampUp": {
-                                            "type": "boolean",
-                                            "title": "RampUp schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": true
-                                        },
-                                        "temp": {
-                                            "type": "object",
-                                            "title": "Temp schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "properties": {
-                                                "amount": {
-                                                    "type": "integer",
-                                                    "title": "Amount schema.",
-                                                    "description": "An explanation about the purpose of this instance.",
-                                                    "default": 70
-                                                },
-                                                "unit": {
-                                                    "type": "string",
-                                                    "title": "Unit schema.",
-                                                    "description": "An explanation about the purpose of this instance.",
-                                                    "default": "celsius"
-                                                }
-                                            },
-                                            "required": [
-                                                "amount",
-                                                "unit"
-                                            ]
-                                        },
-                                        "duration": {
-                                            "type": "integer",
-                                            "title": "Duration schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": 30
-                                        },
-                                        "stirWhileRampUp": {
-                                            "type": "boolean",
-                                            "title": "StirWhileRampUp schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": true
-                                        },
-                                        "stirWhileRest": {
-                                            "type": "boolean",
-                                            "title": "StirWhileRest schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": true
-                                        },
-                                        "remarks": {
-                                            "type": "array",
-                                            "title": "Remarks schema.",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "items": {
-                                                "type": "object",
-                                                "title": "1 schema.",
-                                                "description": "An explanation about the purpose of this instance.",
-                                                "properties": {
-                                                    "language": {
-                                                        "type": "string",
-                                                        "title": "Language schema.",
-                                                        "description": "An explanation about the purpose of this instance.",
-                                                        "default": "de"
-                                                    },
-                                                    "text": {
-                                                        "type": "string",
-                                                        "title": "Text schema.",
-                                                        "description": "An explanation about the purpose of this instance.",
-                                                        "default": "Das ist eine Anmerkung des Autors"
-                                                    }
-                                                },
-                                                "required": [
-                                                    "language",
-                                                    "text"
-                                                ]
-                                            }
-                                        }
-                                    },
-                                    "required": [
-                                        "order",
-                                        "rampUp",
-                                        "temp",
-                                        "duration",
-                                        "stirWhileRampUp",
-                                        "stirWhileRest",
-                                        "remarks"
-                                    ]
-                                }
-                            }
-                        },
-                        "required": [
-                            "maish"
-                        ]
-                    }
-                },
-                "required": [
-                    "internationalBrewReceipeId",
-                    "version",
-                    "type",
-                    "name",
-                    "author",
-                    "expectedResult",
-                    "ingredients",
-                    "brewProcess"
-                ]
-            }
-        }
-    },
-    "required": [
-        "openBrewVersion",
-        "encoding",
-        "receipe"
-    ]
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-03/schema",
+	"id": "http://jsonschema.net",
+	"required": false,
+	"properties": {
+		"encoding": {
+			"type": "string",
+			"id": "http://jsonschema.net/encoding",
+			"required": false
+		},
+		"openBrewVersion": {
+			"type": "string",
+			"id": "http://jsonschema.net/openBrewVersion",
+			"required": false
+		},
+		"recipes": {
+			"type": "array",
+			"id": "http://jsonschema.net/recipes",
+			"required": false,
+			"items": {
+				"type": "object",
+				"id": "http://jsonschema.net/recipes/0",
+				"required": false,
+				"properties": {
+					"author": {
+						"type": "object",
+						"id": "http://jsonschema.net/recipes/0/author",
+						"required": false,
+						"properties": {
+							"address": {
+								"type": "object",
+								"id": "http://jsonschema.net/recipes/0/author/address",
+								"required": false,
+								"properties": {
+									"city": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/author/address/city",
+										"required": false
+									},
+									"country": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/author/address/country",
+										"required": false
+									},
+									"houseNumber": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/author/address/houseNumber",
+										"required": false
+									},
+									"street": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/author/address/street",
+										"required": false
+									},
+									"zip": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/author/address/zip",
+										"required": false
+									}
+								}
+							},
+							"brewMaster": {
+								"type": "string",
+								"id": "http://jsonschema.net/recipes/0/author/brewMaster",
+								"required": false
+							},
+							"brewery": {
+								"type": "string",
+								"id": "http://jsonschema.net/recipes/0/author/brewery",
+								"required": false
+							},
+							"geo": {
+								"type": "object",
+								"id": "http://jsonschema.net/recipes/0/author/geo",
+								"required": false,
+								"properties": {
+									"latitude": {
+										"type": "number",
+										"id": "http://jsonschema.net/recipes/0/author/geo/latitude",
+										"required": false
+									},
+									"longitude": {
+										"type": "number",
+										"id": "http://jsonschema.net/recipes/0/author/geo/longitude",
+										"required": false
+									}
+								}
+							},
+							"url": {
+								"type": "string",
+								"id": "http://jsonschema.net/recipes/0/author/url",
+								"required": false
+							}
+						}
+					},
+					"brewSteps": {
+						"type": "array",
+						"id": "http://jsonschema.net/recipes/0/brewSteps",
+						"required": false,
+						"items": [
+							{
+								"type": "object",
+								"id": "http://jsonschema.net/recipes/0/brewSteps/0",
+								"required": false,
+								"properties": {
+									"sequence": {
+										"type": "number",
+										"id": "http://jsonschema.net/recipes/0/brewSteps/0/sequence",
+										"required": false
+									},
+									"step": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/brewSteps/0/step",
+										"required": false
+									},
+									"subSteps": {
+										"type": "array",
+										"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps",
+										"required": false,
+										"items": {
+											"type": "object",
+											"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0",
+											"required": false,
+											"properties": {
+												"action": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/action",
+													"required": false
+												},
+												"container": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/container",
+													"required": false
+												},
+												"interruptFetchInterval": {
+													"type": "number",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/interruptFetchInterval",
+													"required": false
+												},
+												"interruptMinValue": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/interruptMinValue",
+													"required": false
+												},
+												"interruptModule": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/interruptModule",
+													"required": false
+												},
+												"module": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/module",
+													"required": false
+												},
+												"remarks": {
+													"type": "array",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/remarks",
+													"required": false,
+													"items": {
+														"type": "object",
+														"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/remarks/0",
+														"required": false,
+														"properties": {
+															"language": {
+																"type": "string",
+																"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/remarks/0/language",
+																"required": false
+															},
+															"text": {
+																"type": "string",
+																"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/remarks/0/text",
+																"required": false
+															}
+														}
+													}
+												},
+												"stepName": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/stepName",
+													"required": false
+												},
+												"stirWhileRampUp": {
+													"type": "boolean",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/stirWhileRampUp",
+													"required": false
+												},
+												"targetTemp": {
+													"type": "object",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/targetTemp",
+													"required": false,
+													"properties": {
+														"amount": {
+															"type": "number",
+															"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/targetTemp/amount",
+															"required": false
+														},
+														"tempUnit": {
+															"type": "string",
+															"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/targetTemp/tempUnit",
+															"required": false
+														}
+													}
+												},
+												"timeOnTargetTemp": {
+													"type": "object",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/timeOnTargetTemp",
+													"required": false,
+													"properties": {
+														"amount": {
+															"type": "number",
+															"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/timeOnTargetTemp/amount",
+															"required": false
+														},
+														"timeUnit": {
+															"type": "string",
+															"id": "http://jsonschema.net/recipes/0/brewSteps/0/subSteps/0/timeOnTargetTemp/timeUnit",
+															"required": false
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}, {
+								"type": "object",
+								"id": "http://jsonschema.net/recipes/0/brewSteps/1",
+								"required": false,
+								"properties": {
+									"sequence": {
+										"type": "number",
+										"id": "http://jsonschema.net/recipes/0/brewSteps/1/sequence",
+										"required": false
+									},
+									"step": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/brewSteps/1/step",
+										"required": false
+									},
+									"subSteps": {
+										"type": "array",
+										"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps",
+										"required": false,
+										"items": {
+											"type": "object",
+											"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0",
+											"required": false,
+											"properties": {
+												"action": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/action",
+													"required": false
+												},
+												"container": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/container",
+													"required": false
+												},
+												"interruptFetchInterval": {
+													"type": "number",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/interruptFetchInterval",
+													"required": false
+												},
+												"interruptMinValue": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/interruptMinValue",
+													"required": false
+												},
+												"interruptModule": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/interruptModule",
+													"required": false
+												},
+												"module": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/module",
+													"required": false
+												},
+												"remarks": {
+													"type": "array",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/remarks",
+													"required": false,
+													"items": {
+														"type": "object",
+														"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/remarks/0",
+														"required": false,
+														"properties": {
+															"language": {
+																"type": "string",
+																"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/remarks/0/language",
+																"required": false
+															},
+															"text": {
+																"type": "string",
+																"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/remarks/0/text",
+																"required": false
+															}
+														}
+													}
+												},
+												"stepName": {
+													"type": "string",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/stepName",
+													"required": false
+												},
+												"stirWhileRampUp": {
+													"type": "boolean",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/stirWhileRampUp",
+													"required": false
+												},
+												"targetTemp": {
+													"type": "object",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/targetTemp",
+													"required": false,
+													"properties": {
+														"TempUnit": {
+															"type": "string",
+															"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/targetTemp/TempUnit",
+															"required": false
+														},
+														"amount": {
+															"type": "number",
+															"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/targetTemp/amount",
+															"required": false
+														}
+													}
+												},
+												"timeOnTargetTemp": {
+													"type": "object",
+													"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/timeOnTargetTemp",
+													"required": false,
+													"properties": {
+														"amount": {
+															"type": "number",
+															"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/timeOnTargetTemp/amount",
+															"required": false
+														},
+														"timeUnit": {
+															"type": "string",
+															"id": "http://jsonschema.net/recipes/0/brewSteps/1/subSteps/0/timeOnTargetTemp/timeUnit",
+															"required": false
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						]
+					},
+					"descriptions": {
+						"type": "array",
+						"id": "http://jsonschema.net/recipes/0/descriptions",
+						"required": false,
+						"items": {
+							"type": "object",
+							"id": "http://jsonschema.net/recipes/0/descriptions/0",
+							"required": false,
+							"properties": {
+								"language": {
+									"type": "string",
+									"id": "http://jsonschema.net/recipes/0/descriptions/0/language",
+									"required": false
+								},
+								"text": {
+									"type": "string",
+									"id": "http://jsonschema.net/recipes/0/descriptions/0/text",
+									"required": false
+								}
+							}
+						}
+					},
+					"expectedResult": {
+						"type": "object",
+						"id": "http://jsonschema.net/recipes/0/expectedResult",
+						"required": false,
+						"properties": {
+							"bitterness": {
+								"type": "object",
+								"id": "http://jsonschema.net/recipes/0/expectedResult/bitterness",
+								"required": false,
+								"properties": {
+									"amount": {
+										"type": "number",
+										"id": "http://jsonschema.net/recipes/0/expectedResult/bitterness/amount",
+										"required": false
+									},
+									"tasteUnit": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/expectedResult/bitterness/tasteUnit",
+										"required": false
+									}
+								}
+							},
+							"carbonDioxide": {
+								"type": "object",
+								"id": "http://jsonschema.net/recipes/0/expectedResult/carbonDioxide",
+								"required": false,
+								"properties": {
+									"amount": {
+										"type": "number",
+										"id": "http://jsonschema.net/recipes/0/expectedResult/carbonDioxide/amount",
+										"required": false
+									},
+									"ratioUnit": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/expectedResult/carbonDioxide/ratioUnit",
+										"required": false
+									}
+								}
+							},
+							"colourEbc": {
+								"type": "number",
+								"id": "http://jsonschema.net/recipes/0/expectedResult/colourEbc",
+								"required": false
+							},
+							"originalExtract": {
+								"type": "object",
+								"id": "http://jsonschema.net/recipes/0/expectedResult/originalExtract",
+								"required": false,
+								"properties": {
+									"amount": {
+										"type": "number",
+										"id": "http://jsonschema.net/recipes/0/expectedResult/originalExtract/amount",
+										"required": false
+									},
+									"ratioUnit": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/expectedResult/originalExtract/ratioUnit",
+										"required": false
+									}
+								}
+							},
+							"totalAmount": {
+								"type": "object",
+								"id": "http://jsonschema.net/recipes/0/expectedResult/totalAmount",
+								"required": false,
+								"properties": {
+									"amount": {
+										"type": "number",
+										"id": "http://jsonschema.net/recipes/0/expectedResult/totalAmount/amount",
+										"required": false
+									},
+									"volumeUnit": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/expectedResult/totalAmount/volumeUnit",
+										"required": false
+									}
+								}
+							}
+						}
+					},
+					"ingredients": {
+						"type": "object",
+						"id": "http://jsonschema.net/recipes/0/ingredients",
+						"required": false,
+						"properties": {
+							"brewingWater": {
+								"type": "object",
+								"id": "http://jsonschema.net/recipes/0/ingredients/brewingWater",
+								"required": false,
+								"properties": {
+									"mashing_water": {
+										"type": "object",
+										"id": "http://jsonschema.net/recipes/0/ingredients/brewingWater/mashing_water",
+										"required": false,
+										"properties": {
+											"amount": {
+												"type": "number",
+												"id": "http://jsonschema.net/recipes/0/ingredients/brewingWater/mashing_water/amount",
+												"required": false
+											},
+											"lacticAcid": {
+												"type": "string",
+												"id": "http://jsonschema.net/recipes/0/ingredients/brewingWater/mashing_water/lacticAcid",
+												"required": false
+											},
+											"volumeUnit": {
+												"type": "string",
+												"id": "http://jsonschema.net/recipes/0/ingredients/brewingWater/mashing_water/volumeUnit",
+												"required": false
+											}
+										}
+									},
+									"sparging_water": {
+										"type": "object",
+										"id": "http://jsonschema.net/recipes/0/ingredients/brewingWater/sparging_water",
+										"required": false,
+										"properties": {
+											"amount": {
+												"type": "number",
+												"id": "http://jsonschema.net/recipes/0/ingredients/brewingWater/sparging_water/amount",
+												"required": false
+											},
+											"volumeUnit": {
+												"type": "string",
+												"id": "http://jsonschema.net/recipes/0/ingredients/brewingWater/sparging_water/volumeUnit",
+												"required": false
+											}
+										}
+									}
+								}
+							},
+							"customIngredients": {
+								"type": "array",
+								"id": "http://jsonschema.net/recipes/0/ingredients/customIngredients",
+								"required": false,
+								"items": {
+									"type": "object",
+									"id": "http://jsonschema.net/recipes/0/ingredients/customIngredients/0",
+									"required": false,
+									"properties": {
+										"further": {
+											"type": "string",
+											"id": "http://jsonschema.net/recipes/0/ingredients/customIngredients/0/further",
+											"required": false
+										},
+										"name": {
+											"type": "string",
+											"id": "http://jsonschema.net/recipes/0/ingredients/customIngredients/0/name",
+											"required": false
+										}
+									}
+								}
+							},
+							"grains": {
+								"type": "array",
+								"id": "http://jsonschema.net/recipes/0/ingredients/grains",
+								"required": false,
+								"items": {
+									"type": "object",
+									"id": "http://jsonschema.net/recipes/0/ingredients/grains/0",
+									"required": false,
+									"properties": {
+										"ebc": {
+											"type": "number",
+											"id": "http://jsonschema.net/recipes/0/ingredients/grains/0/ebc",
+											"required": false
+										},
+										"name": {
+											"type": "string",
+											"id": "http://jsonschema.net/recipes/0/ingredients/grains/0/name",
+											"required": false
+										},
+										"percentage": {
+											"type": "number",
+											"id": "http://jsonschema.net/recipes/0/ingredients/grains/0/percentage",
+											"required": false
+										}
+									}
+								}
+							},
+							"hops": {
+								"type": "array",
+								"id": "http://jsonschema.net/recipes/0/ingredients/hops",
+								"required": false,
+								"items": {
+									"type": "object",
+									"id": "http://jsonschema.net/recipes/0/ingredients/hops/0",
+									"required": false,
+									"properties": {
+										"alpha": {
+											"type": "number",
+											"id": "http://jsonschema.net/recipes/0/ingredients/hops/0/alpha",
+											"required": false
+										},
+										"humulene": {
+											"type": "string",
+											"id": "http://jsonschema.net/recipes/0/ingredients/hops/0/humulene",
+											"required": false
+										},
+										"name": {
+											"type": "string",
+											"id": "http://jsonschema.net/recipes/0/ingredients/hops/0/name",
+											"required": false
+										},
+										"shape": {
+											"type": "string",
+											"id": "http://jsonschema.net/recipes/0/ingredients/hops/0/shape",
+											"required": false
+										},
+										"type": {
+											"type": "string",
+											"id": "http://jsonschema.net/recipes/0/ingredients/hops/0/type",
+											"required": false
+										},
+										"use": {
+											"type": "string",
+											"id": "http://jsonschema.net/recipes/0/ingredients/hops/0/use",
+											"required": false
+										}
+									}
+								}
+							},
+							"yeast": {
+								"type": "object",
+								"id": "http://jsonschema.net/recipes/0/ingredients/yeast",
+								"required": false,
+								"properties": {
+									"further": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/ingredients/yeast/further",
+										"required": false
+									},
+									"name": {
+										"type": "string",
+										"id": "http://jsonschema.net/recipes/0/ingredients/yeast/name",
+										"required": false
+									}
+								}
+							}
+						}
+					},
+					"names": {
+						"type": "array",
+						"id": "http://jsonschema.net/recipes/0/names",
+						"required": false,
+						"items": {
+							"type": "object",
+							"id": "http://jsonschema.net/recipes/0/names/0",
+							"required": false,
+							"properties": {
+								"language": {
+									"type": "string",
+									"id": "http://jsonschema.net/recipes/0/names/0/language",
+									"required": false
+								},
+								"text": {
+									"type": "string",
+									"id": "http://jsonschema.net/recipes/0/names/0/text",
+									"required": false
+								}
+							}
+						}
+					},
+					"type": {
+						"type": "string",
+						"id": "http://jsonschema.net/recipes/0/type",
+						"required": false
+					},
+					"version": {
+						"type": "number",
+						"id": "http://jsonschema.net/recipes/0/version",
+						"required": false
+					}
+				}
+			}
+		}
+	}
 }
