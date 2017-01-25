@@ -141,7 +141,6 @@
 	},
 	"brewSteps": [
 		{
-			"sequence": 1,
 			"step": "maish",
 			"subSteps": [
 				{
@@ -175,7 +174,6 @@
 			]
 		},
 		{
-			"sequence": 2,
 			"step": "lautering",
 			"subSteps": [
 				{
