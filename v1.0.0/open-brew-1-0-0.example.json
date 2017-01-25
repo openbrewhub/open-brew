@@ -20,7 +20,7 @@
 	},
 	"originalWort": {
 		"amount": 13.5,
-		"ratioUnit": "percent"
+		"ratioUnit": "degreePlato"
 	},
 	"highGravityFactor": {
 		"amount": 0,
