@@ -22,7 +22,7 @@
 		"amount": 13.5,
 		"ratioUnit": "percent"
 	},
-	"hightGravityFactor": {
+	"highGravityFactor": {
 		"amount": 0,
 		"ratioUnit": "percent"
 	},
