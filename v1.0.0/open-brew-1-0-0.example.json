@@ -14,10 +14,6 @@
 			"text": "Dieses großartige Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
 		}
 	],
-	"totalAmount": {
-		"amount": 20,
-		"volumeUnit": "liter"
-	},
 	"originalWort": {
 		"amount": 13.5,
 		"ratioUnit": "degreePlato"
@@ -146,7 +142,7 @@
 		]
 	},
 	"brewing": {
-		"mash": {
+		"mashing": {
 			"mashInTemperature": {
 				"amount": 57,
 				"tempUnit": "celsius"
@@ -202,7 +198,7 @@
 				}
 			]
 		},
-		"sparge": {
+		"sparging": {
 
 		},
 		"fermentation": {
