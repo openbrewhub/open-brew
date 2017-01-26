@@ -17,14 +17,12 @@ The beer brewing scene changes. Since the craftbeer revolution came along, brewi
 - Documentation in Wiki (See progress here [Wiki](https://github.com/SeeSharp7/Open-Brew/wiki))
 - Extract json schema from example
 - Add description, required fields, enum values
-- Add GNU GPL License to repo
 - Release version 1.0.0
 
 #### Thoughts for future versions
 - Swagger json definition
 - Library for extrapolating amounts
 - Minimum requirements of brew equipment (container size, ...)
-- Central online portal for all recipes worldwide (open-brew-hub.com)
+- Free online hub for all recipes worldwide (open-brew-hub.com)
 - Directly import your favourite recipes to your IoT-Device
 - Address all automated parts (SSRs; Pumps; ...) in this json format  
-
