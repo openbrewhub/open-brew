@@ -21,7 +21,7 @@ The beer brewing scene changes. Since the craftbeer revolution came along, brewi
 
 #### Thoughts for future versions
 - Swagger json definition
-- Library for extrapolating amounts
+- Formula and Codelibs for extrapolating amounts
 - Minimum requirements of brew equipment (container size, ...)
 - Free online hub for all recipes worldwide (open-brew-hub.com)
 - Directly import your favourite recipes to your IoT-Device
