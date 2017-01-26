@@ -85,7 +85,10 @@
 						"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
 					}
 				],
-				"percentage": 70,
+				"relativeAmount": {
+					"amount": 70,
+					"ratioUnit": "percent"
+				},
 				"colour": {
 					"amount": 23,
 					"colourUnit": "ebc"
@@ -103,7 +106,10 @@
 						"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
 					}
 				],
-				"percentage": 30,
+				"relativeAmount": {
+					"amount": 30,
+					"ratioUnit": "percent"
+				},
 				"colour": {
 					"amount": 23,
 					"colourUnit": "ebc"
