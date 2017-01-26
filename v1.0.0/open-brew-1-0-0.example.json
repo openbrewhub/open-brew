@@ -145,72 +145,62 @@
 			}
 		]
 	},
-	"brewSteps": [
-		{
-			"step": "maish",
-			"subSteps": [
+	"brewing": {
+		"mash": {
+			"mashInTemperature": {
+				"amount": 57,
+				"tempUnit": "celsius"
+			},
+			"rests": [
 				{
-					"stepName": "Ramp Up - Initial",
-					"stirWhileRampUp": true,
-					"targetTemp": {
-						"amount": 70,
+					"name": "Eiweißrast",
+					"withStirring": true,
+					"targetTemperature": {
+						"amount": 57,
 						"tempUnit": "celsius"
 					},
-					"timeOnTargetTemp": {
-						"amount": 60,
-						"timeUnit": "minute"
-					},
-					"container": "maishContainer",
-					"module": "waterpump",
-					"interruptModule": "filllevelsensor",
-					"interruptMinValue": "",
-					"interruptFetchInterval": 10000,
-					"action": "switch",
-					"remarks": [
-						{
-							"language": "en",
-							"text": "This is an authors remark"
-						},
-						{
-							"language": "de",
-							"text": "Das ist eine Anmerkung des Autors"
-						}
-					]
-				}
-			]
-		},
-		{
-			"step": "lautering",
-			"subSteps": [
+					"restingTime": {
+						"amount": 10,
+						"timeUnit": "minutes"
+					}
+				},
 				{
-					"stepName": "Whatever... i'm trying!",
-					"stirWhileRampUp": true,
-					"targetTemp": {
-						"amount": 70,
-						"TempUnit": "celsius"
+					"name": "Maltoserast",
+					"withStirring": true,
+					"targetTemperature": {
+						"amount": 63,
+						"tempUnit": "celsius"
 					},
-					"timeOnTargetTemp": {
-						"amount": 60,
-						"timeUnit": "minute"
+					"restingTime": {
+						"amount": 40,
+						"timeUnit": "minutes"
+					}
+				},
+				{
+					"name": "Verzuckerung",
+					"withStirring": true,
+					"targetTemperature": {
+						"amount": 73,
+						"tempUnit": "celsius"
 					},
-					"container": "maishContainer",
-					"module": "waterpump",
-					"interruptModule": "filllevelsensor",
-					"interruptMinValue": "",
-					"interruptFetchInterval": 10000,
-					"action": "switch",
-					"remarks": [
-						{
-							"language": "en",
-							"text": "This is an authors remark"
-						},
-						{
-							"language": "de",
-							"text": "Das ist eine Anmerkung des Autors"
-						}
-					]
+					"restingTime": {
+						"amount": 20,
+						"timeUnit": "minutes"
+					}
+				},
+				{
+					"name": "Abmaischen",
+					"withStirring": true,
+					"targetTemperature": {
+						"amount": 78,
+						"tempUnit": "celsius"
+					},
+					"restingTime": {
+						"amount": 0,
+						"timeUnit": "minutes"
+					}
 				}
 			]
 		}
-	]
+	}
 }
