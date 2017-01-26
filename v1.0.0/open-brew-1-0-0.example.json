@@ -71,16 +71,6 @@
 		"grains": [
 			{
 				"name": "Pilsener Malz",
-				"descriptions": [
-					{
-						"language": "en",
-						"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
-					},
-					{
-						"language": "de",
-						"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
-					}
-				],
 				"relativeAmount": {
 					"amount": 70,
 					"ratioUnit": "percent"
@@ -92,16 +82,6 @@
 			},
 			{
 				"name": "Münchner Malz II",
-				"descriptions": [
-					{
-						"language": "en",
-						"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
-					},
-					{
-						"language": "de",
-						"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
-					}
-				],
 				"relativeAmount": {
 					"amount": 30,
 					"ratioUnit": "percent"
@@ -115,16 +95,6 @@
 		"hops": [
 			{
 				"name": "Spalter Aromahopfen",
-				"descriptions": [
-					{
-						"language": "en",
-						"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
-					},
-					{
-						"language": "de",
-						"text": "Dieses Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
-					}
-				],
 				"alpha": 5.5,
 				"shape": "pellet",
 				"type": "aroma"
