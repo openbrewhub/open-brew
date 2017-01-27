@@ -35,10 +35,10 @@
 		"url": "http://holdmybeer.de",
 		"phone": "+49 911 123456789",
 		"address": {
-			"street": "Examplestreet",
-			"houseNumber": "14a",
+			"street": "Examplestreet 14a",
 			"zip": "90411",
 			"city": "Nuremberg",
+			"federateState": "Bavaria",
 			"country": "Germany"
 		},
 		"geo": {
@@ -63,8 +63,11 @@
 		},
 		"yeast": {
 			"name": "nameofYeast",
-			"further": "What other fields do we need?",
-			"amount": 2
+			"yeastAmount": {
+				"amount": 2,
+				"ratioUnit": "gramsPerLiter"
+			},
+			"starterNeeded": true
 		},
 		"grains": [
 			{
