@@ -16,6 +16,10 @@
 			"text": "Dieses großartige Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
 		}
 	],
+	"matureTime": {
+		"amount": 4,
+		"timeUnit": "weeks"
+	},
 	"originalWort": {
 		"amount": 13.5,
 		"ratioUnit": "degreePlato"
@@ -56,7 +60,7 @@
 		"solids": [
 			{
 				"name": "Pilsener Malz",
-				"type": "",
+				"type": "pilsenerMalt",
 				"relativeAmount": {
 					"amount": 70,
 					"ratioUnit": "percent"
@@ -68,7 +72,7 @@
 			},
 			{
 				"name": "Münchner Malz II",
-				"type": "",
+				"type": "munichMalt",
 				"relativeAmount": {
 					"amount": 30,
 					"ratioUnit": "percent"
