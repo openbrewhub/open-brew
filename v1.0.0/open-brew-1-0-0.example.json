@@ -83,14 +83,6 @@
 				}
 			}
 		],
-		"yeast": {
-			"name": "nameofYeast",
-			"yeastAmount": {
-				"amount": 2,
-				"ratioUnit": "gramsPerLiter"
-			},
-			"starterNeeded": true
-		},
 		"hops": [
 			{
 				"name": "Spalter Aromahopfen",
@@ -98,7 +90,15 @@
 				"shape": "pellet",
 				"type": "aroma"
 			}
-		]
+		],
+		"yeast": {
+			"name": "nameofYeast",
+			"yeastAmount": {
+				"amount": 2,
+				"ratioUnit": "gramsPerLiter"
+			},
+			"starterNeeded": true
+		}
 	},
 	"brewing": {
 		"mashing": {
