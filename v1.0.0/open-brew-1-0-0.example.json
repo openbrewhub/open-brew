@@ -20,10 +20,6 @@
 		"amount": 13.5,
 		"ratioUnit": "degreePlato"
 	},
-	"highGravityFactor": {
-		"amount": 0,
-		"ratioUnit": "percent"
-	},
 	"bitterness": {
 		"amount": 26,
 		"tasteUnit": "ibu"
