@@ -10,6 +10,7 @@ This repo is not just the home of the open brew format. It also includes a knowl
 #### Requirements:
 - Json Schema as definition format
 - Versioning for further development
+- Variable and scalable ingredient amounts
 - Multi language support
 - Automation details possible but not required
 - Free definition of brew steps
