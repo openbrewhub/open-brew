@@ -51,27 +51,12 @@
 			"alkalinity": {
 				"amount": 1.1,
 				"chemicalUnit": "dh"
-			},
-			"mashingWater": {
-				"amount": 17.09,
-				"volumeUnit": "liter"
-			},
-			"spargingWater": {
-				"amount": 13.47,
-				"volumeUnit": "liter"
 			}
 		},
-		"yeast": {
-			"name": "nameofYeast",
-			"yeastAmount": {
-				"amount": 2,
-				"ratioUnit": "gramsPerLiter"
-			},
-			"starterNeeded": true
-		},
-		"grains": [
+		"solids": [
 			{
 				"name": "Pilsener Malz",
+				"type": "",
 				"relativeAmount": {
 					"amount": 70,
 					"ratioUnit": "percent"
@@ -83,6 +68,7 @@
 			},
 			{
 				"name": "Münchner Malz II",
+				"type": "",
 				"relativeAmount": {
 					"amount": 30,
 					"ratioUnit": "percent"
@@ -93,22 +79,20 @@
 				}
 			}
 		],
+		"yeast": {
+			"name": "nameofYeast",
+			"yeastAmount": {
+				"amount": 2,
+				"ratioUnit": "gramsPerLiter"
+			},
+			"starterNeeded": true
+		},
 		"hops": [
 			{
 				"name": "Spalter Aromahopfen",
 				"alpha": 5.5,
 				"shape": "pellet",
 				"type": "aroma"
-			}
-		],
-		"customIngredients": [
-			{
-				"name": "Sweet honey, dude",
-				"customWeight": {
-					"amount": 25,
-					"weightUnit": "gram"
-				},
-				"addWhen": "maish"
 			}
 		]
 	},
