@@ -71,7 +71,7 @@
 				},
 				"colour": {
 					"amount": 23,
-					"colourUnit": "ebc"
+					"colorUnit": "ebc"
 				}
 			},
 			{
@@ -83,7 +83,7 @@
 				},
 				"colour": {
 					"amount": 23,
-					"colourUnit": "ebc"
+					"colorUnit": "ebc"
 				}
 			}
 		],
