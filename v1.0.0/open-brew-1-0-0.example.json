@@ -24,6 +24,10 @@
 		"amount": 13.5,
 		"ratioUnit": "degreePlato"
 	},
+	"alcoholContent": {
+		"amount": 4.8,
+		"ratioUnit": "volumePercent"
+	},
 	"bitterness": {
 		"amount": 26,
 		"tasteUnit": "ibu"
