@@ -69,7 +69,7 @@
 					"amount": 70,
 					"ratioUnit": "percent"
 				},
-				"colour": {
+				"color": {
 					"amount": 23,
 					"colorUnit": "ebc"
 				}
@@ -81,7 +81,7 @@
 					"amount": 30,
 					"ratioUnit": "percent"
 				},
-				"colour": {
+				"color": {
 					"amount": 23,
 					"colorUnit": "ebc"
 				}
