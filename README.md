@@ -21,7 +21,7 @@ This repo is not just the home of the open brew format. It also includes a knowl
 - Finalize the [JSON Example](/v1.0.0/open-brew-1-0-0.example.json "JSON Example for Open Brew Version 1.0.0")
 - Full Documentation in Wiki
 - Extract json schema from example
-- Add description, required fields, enum values
+- Add description, required fields, enum values to schema
 - Release version 1.0.0
 
 #### Thoughts for future versions
