@@ -26,6 +26,7 @@ This repo is not just the home of the open brew format. It also includes a knowl
 
 #### Thoughts for future versions
 - Swagger json definition
+- Wikipedia article about Open Brew
 - Formula and Codelibs for extrapolating amounts
 - Minimum requirements of brew equipment (container size, ...)
 - Free online hub for all recipes worldwide (open-brew-hub.com)
