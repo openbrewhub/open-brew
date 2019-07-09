@@ -96,7 +96,7 @@
     "pathitems" : {
       "EntityOperations" : {
         "get" : {
-          "summary" : "Get all items",
+          "summary" : "Get all recipes",
           "description" : "This operation supports pagination",
           "parameters" : [ {
             "$ref" : "#/components/parameters/offsetParam"
@@ -113,13 +113,24 @@
           }
         },
         "post" : {
-          "summary" : "Add a new item",
+          "summary" : "Add a new recipe",
           "requestBody" : {
             "$ref" : "#/components/requestBodies/NewItem"
           },
           "responses" : {
             "201" : {
               "description" : "Created"
+            }
+          }
+        },
+        "put" : {
+          "summary" : "Change an existing recipe",
+          "requestBody" : {
+            "$ref" : "#/components/requestBodies/NewItem"
+          },
+          "responses" : {
+            "200" : {
+              "description" : "Changed successfully"
             }
           }
         }
