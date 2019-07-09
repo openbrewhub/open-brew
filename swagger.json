@@ -94,7 +94,7 @@
       }
     },
     "pathitems" : {
-      "EntityOperations" : {
+      "BrewRecipes" : {
         "get" : {
           "summary" : "Get all recipes",
           "description" : "This operation supports pagination",
