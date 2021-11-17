@@ -18,7 +18,18 @@
 	],
 	"matureTime": {
 		"amount": 4,
-		"timeUnit": "weeks"
+		"timeUnit": "weeks",
+		"hint": "addTemperature!!!!",
+		"descriptions": [
+			{
+				"language": "en",
+				"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
+			},
+			{
+				"language": "de",
+				"text": "Dieses großartige Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
+			}
+		]
 	},
 	"originalWort": {
 		"amount": 13.5,
@@ -162,10 +173,17 @@
 			]
 		},
 		"sparging": {
-			"missing": "to be defined..."
+			"missing": "to be defined...",
+			"restingTimeInMinutes": 20,
+			"amountOfWater": 23.2
 		},
 		"fermentation": {
-			"missing": "to be defined..."
+			"missing": "to be defined...",
+			"yeastName": "Safale WB40",
+			"yeastAmount": {
+				"amount": 11.0,
+				"weightUnit": "grams"
+			}
 		}
 	}
 }
