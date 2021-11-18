@@ -167,6 +167,12 @@
 				}
 			]
 		},
+		"lautering": {
+
+		},
+		"cooking": {
+			
+		},
 		"fermentation": {
 			"yeast": {
 				"yeastName": "Safale WB40",
@@ -205,6 +211,6 @@
 					"text": "Längere Reifezeit bringt hier auch bessere Ergebnisse."
 				}
 			]
-		},
+		}
 	}
 }
