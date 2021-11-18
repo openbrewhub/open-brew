@@ -182,11 +182,18 @@
 			"amountOfWater": 23.2
 		},
 		"fermentation": {
-			"missing": "to be defined...",
 			"yeastName": "Safale WB40",
 			"yeastAmount": {
 				"amount": 11.0,
 				"weightUnit": "grams"
+			},
+			"targetTemperature": {
+				"amount": 19,
+				"tempUnit": "celsius"
+			},
+			"apparentAttenuation": {
+				"amount": 3.9,
+				"ratioUnit": "degreePlato"
 			}
 		},
 		"matureProcess": {
