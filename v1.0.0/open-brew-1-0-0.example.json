@@ -91,7 +91,16 @@
 		],
 		"hops": [
 			{
-				"name": "Spalter Aromahopfen",
+				"name": "Hallertau Magnum",
+				"alphaAcid": {
+					"amount": 14.5,
+					"chemicalUnit": "alphaAcid"
+				},
+				"shape": "pellet",
+				"type": "bitter"
+			},
+			{
+				"name": "Spalter Select",
 				"alphaAcid": {
 					"amount": 5.5,
 					"chemicalUnit": "alphaAcid"
@@ -106,6 +115,7 @@
 				"amount": 2,
 				"ratioUnit": "gramsPerLiter"
 			},
+
 			"starterNeeded": true
 		}
 	},
