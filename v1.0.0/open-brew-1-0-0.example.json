@@ -45,10 +45,6 @@
 			"city": "Nuremberg",
 			"federateState": "Bavaria",
 			"country": "Germany"
-		},
-		"geo": {
-			"latitude": 99.123,
-			"longitude": 47.123
 		}
 	},
 	"ingredients": {
