@@ -40,7 +40,8 @@
 		"url": "http://holdmybeer.de",
 		"phone": "+49 911 123456789",
 		"address": {
-			"street": "Examplestreet 14a",
+			"street": "Examplestreet",
+			"houseNumber": "14a",
 			"zip": "90411",
 			"city": "Nuremberg",
 			"federateState": "Bavaria",
