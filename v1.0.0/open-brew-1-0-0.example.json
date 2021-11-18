@@ -56,6 +56,14 @@
 			"alkalinity": {
 				"amount": 1.1,
 				"chemicalUnit": "dh"
+			},
+			"mashWater": {
+				"amount": 23,
+				"volumeUnit": "liter"
+			},
+			"spargeWater": {
+				"amount": 16,
+				"volumeUnit": "liter"
 			}
 		},
 		"solids": [
