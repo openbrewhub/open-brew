@@ -108,16 +108,7 @@
 				"shape": "pellet",
 				"type": "aroma"
 			}
-		],
-		"yeast": {
-			"name": "nameofYeast",
-			"yeastAmount": {
-				"amount": 2,
-				"ratioUnit": "gramsPerLiter"
-			},
-
-			"starterNeeded": true
-		}
+		]
 	},
 	"brewing": {
 		"mashing": {
@@ -176,16 +167,15 @@
 				}
 			]
 		},
-		"sparging": {
-			"missing": "to be defined...",
-			"restingTimeInMinutes": 20,
-			"amountOfWater": 23.2
-		},
 		"fermentation": {
-			"yeastName": "Safale WB40",
-			"yeastAmount": {
-				"amount": 11.0,
-				"weightUnit": "grams"
+			"yeast": {
+				"yeastName": "Safale WB40",
+				"yeastType": "top-fermented",
+				"yeastAmount": {
+					"amount": 11.0,
+					"weightUnit": "grams"
+				},
+				"yeastStarterNeeded": true	
 			},
 			"targetTemperature": {
 				"amount": 19,
