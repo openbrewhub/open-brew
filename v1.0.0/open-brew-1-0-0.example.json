@@ -6,6 +6,7 @@
 	"createDate": "2017-01-22T16:48:13+00:00",
 	"changeDate": "2017-01-26T19:47:27+00:00",
 	"brewStyle": "Amber Lager",
+	"suggestedMashType": "Basic Infusion Mash - Step / Multistep Mashing - Decoction Mash",
 	"descriptions": [
 		{
 			"language": "en",
@@ -16,21 +17,6 @@
 			"text": "Dieses großartige Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
 		}
 	],
-	"matureTime": {
-		"amount": 4,
-		"timeUnit": "weeks",
-		"hint": "addTemperature!!!!",
-		"descriptions": [
-			{
-				"language": "en",
-				"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
-			},
-			{
-				"language": "de",
-				"text": "Dieses großartige Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
-			}
-		]
-	},
 	"originalWort": {
 		"amount": 13.5,
 		"ratioUnit": "degreePlato"
@@ -184,6 +170,26 @@
 				"amount": 11.0,
 				"weightUnit": "grams"
 			}
-		}
+		},
+		"matureProcess": {
+			"targetTemperature": {
+				"amount": 2.5,
+				"tempUnit": "celsius"
+			},
+			"restingTime": {
+				"amount": 4,
+				"timeUnit": "week"
+			},
+			"descriptions": [
+				{
+					"language": "en",
+					"text": "A longer mature time will bring better results"
+				},
+				{
+					"language": "de",
+					"text": "Längere Reifezeit bringt hier auch bessere Ergebnisse."
+				}
+			]
+		},
 	}
 }
