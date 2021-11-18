@@ -66,7 +66,7 @@
 		"solids": [
 			{
 				"name": "Pilsener Malz",
-				"type": "pilsenerMalt",
+				"type": "grain",
 				"relativeAmount": {
 					"amount": 70,
 					"ratioUnit": "percent"
@@ -78,7 +78,7 @@
 			},
 			{
 				"name": "Münchner Malz II",
-				"type": "munichMalt",
+				"type": "grain",
 				"relativeAmount": {
 					"amount": 30,
 					"ratioUnit": "percent"
@@ -92,7 +92,10 @@
 		"hops": [
 			{
 				"name": "Spalter Aromahopfen",
-				"alpha": 5.5,
+				"alphaAcid": {
+					"amount": 5.5,
+					"chemicalUnit": "alphaAcid"
+				},
 				"shape": "pellet",
 				"type": "aroma"
 			}
