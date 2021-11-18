@@ -34,10 +34,10 @@
 		"ratioUnit": "gramsPerLiter"
 	},
 	"author": {
-		"private": true,
-		"brewery": "Hopfen Doldis",
-		"brewMaster": "Max Mustermann",
-		"url": "http://holdmybeer.de",
+		"commercialBrewery": false,
+		"breweryName": "Hopfen Doldis",
+		"brewMasterName": "Max Mustermann",
+		"breweryUrl": "http://holdmybeer.de",
 		"phone": "+49 911 123456789",
 		"address": {
 			"street": "Examplestreet",
