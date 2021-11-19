@@ -75,24 +75,6 @@
 		  "volumeUnit": "liter"
 		}
 	  },
-	  "solids": [
-		{
-		  "name": "Pilsener Malz",
-		  "type": "grain",
-		  "color": {
-			"amount": 23,
-			"colorUnit": "ebc"
-		  }
-		},
-		{
-		  "name": "Münchner Malz II",
-		  "type": "grain",
-		  "color": {
-			"amount": 23,
-			"colorUnit": "ebc"
-		  }
-		}
-	  ],
 	  "hops": [
 		{
 		  "name": "Hallertau Magnum",
@@ -116,6 +98,24 @@
 	},
 	"brewing": {
 	  "mashing": {
+		"solids": [
+			{
+			  "name": "Pilsener Malz",
+			  "type": "grain",
+			  "color": {
+				"amount": 23,
+				"colorUnit": "ebc"
+			  }
+			},
+			{
+			  "name": "Münchner Malz II",
+			  "type": "grain",
+			  "color": {
+				"amount": 23,
+				"colorUnit": "ebc"
+			  }
+			}
+		  ],	
 		"mashInTemperature": {
 		  "amount": 57,
 		  "tempUnit": "celsius"
@@ -172,7 +172,12 @@
 		]
 	  },
 	  "lautering": {},
-	  "cooking": {},
+	  "cooking": {
+		  "overallCookingTime": {
+			  "amount": 90,
+			  "timeUnit": "minutes"
+		  }
+	  },
 	  "fermentation": {
 		"yeast": {
 		  "yeastName": "Safale WB40",
