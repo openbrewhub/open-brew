@@ -51,7 +51,7 @@
 		"amount": 26,
 		"tasteUnit": "ibu"
 	  },
-	  "carbonDioxide": {
+	  "carbonationLevel": {
 		"amount": 5,
 		"ratioUnit": "gramsPerLiter"
 	  }
@@ -75,10 +75,6 @@
 		{
 		  "name": "Pilsener Malz",
 		  "type": "grain",
-		  "relativeAmount": {
-			"amount": 70,
-			"ratioUnit": "percent"
-		  },
 		  "color": {
 			"amount": 23,
 			"colorUnit": "ebc"
@@ -87,10 +83,6 @@
 		{
 		  "name": "Münchner Malz II",
 		  "type": "grain",
-		  "relativeAmount": {
-			"amount": 30,
-			"ratioUnit": "percent"
-		  },
 		  "color": {
 			"amount": 23,
 			"colorUnit": "ebc"
