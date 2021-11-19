@@ -1,0 +1,141 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Open Brew API
+  description: This is the common standard api description for the exchange of beer brewing recipes. Cheers.
+  license:
+    name: Beerware
+    url: https://de.wikipedia.org/wiki/Beerware
+servers:
+  - url: http://openbrewhub.com/v1
+paths:
+  /recipes:
+    get:
+      summary: List all receipes
+      operationId: listRecipes
+      tags:
+        - recipes
+      parameters:
+        - name: limit
+          in: query
+          description: How many brew recipes to return at one time (max/default 100)
+          required: false
+          schema:
+            type: integer
+            format: int32
+        - name: searchQuery
+          in: query
+          description: Search phrase for recipes
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A paged array of brew recipes
+          headers:
+            x-next:
+              description: A link to the next page of responses
+              schema:
+                type: string
+          content:
+            application/json:    
+              schema:
+                $ref: "#/components/schemas/Pets"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      summary: Create a new recipe
+      operationId: createRecipe
+      tags:
+        - recipes
+      responses:
+        '201':
+          description: Null response
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    
+  /recipes/{recipeId}:
+    get:
+      summary: Get a specific recipe
+      operationId: getRecipe
+      tags:
+        - recipes
+      parameters:
+        - name: recipeId
+          in: path
+          required: true
+          description: The id of the recipe to retrieve
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Expected response to a valid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Pet"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    put:
+      summary: Replace/update an existing recipe
+      operationId: updateRecipe
+      tags:
+        - recipes
+      parameters:
+        - name: recipeId
+          in: path
+          required: true
+          description: The id of the recipe to replace/update
+          schema:
+            type: string
+      responses:
+        '201':
+          description: Null response
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    Pet:
+      type: object
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        tag:
+          type: string
+    Pets:
+      type: array
+      items:
+        $ref: "#/components/schemas/Pet"
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
