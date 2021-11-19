@@ -7,6 +7,10 @@
 	  "createDate": "2017-01-22T16:48:13+00:00",
 	  "changeDate": "2017-01-26T19:47:27+00:00",
 	  "beerType": "Amber Lager",
+	  "expectedEfficiency": {
+		  "amount": 75,
+		  "relativeUnit": "percent"
+	  },
 	  "suggestedMashType": "Basic Infusion Mash - Step / Multistep Mashing - Decoction Mash",
 	  "descriptions": [
 		{
