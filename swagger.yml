@@ -23,6 +23,13 @@ paths:
           schema:
             type: integer
             format: int32
+        - name: offset
+          in: query
+          description: Offset number for enabling pagination
+          required: false
+          schema:
+            type: integer
+            format: int32
         - name: searchQuery
           in: query
           description: Search phrase for recipes
@@ -52,6 +59,13 @@ paths:
       operationId: createRecipe
       tags:
         - recipes
+      requestBody:
+        description: Add your favourite recipe
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pet'
       responses:
         '201':
           description: Null response
@@ -100,6 +114,13 @@ paths:
           description: The id of the recipe to replace/update
           schema:
             type: string
+      requestBody:
+        description: Add your favourite recipe
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pet'
       responses:
         '201':
           description: Null response
