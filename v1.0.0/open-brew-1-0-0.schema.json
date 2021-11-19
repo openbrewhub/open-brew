@@ -2,174 +2,242 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "openBrewVersion": {
-      "type": "string"
-    },
-    "encoding": {
-      "type": "string"
-    },
-    "recipeName": {
-      "type": "string"
-    },
-    "recipeVersion": {
-      "type": "integer"
-    },
-    "createDate": {
-      "type": "string"
-    },
-    "changeDate": {
-      "type": "string"
-    },
-    "brewStyle": {
-      "type": "string"
-    },
-    "descriptions": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "language": {
-            "type": "string"
-          },
-          "text": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "language",
-          "text"
-        ]
-      }
-    },
-    "matureTime": {
+    "info": {
       "type": "object",
       "properties": {
-        "amount": {
+        "openBrewVersion": {
+          "type": "string"
+        },
+        "encoding": {
+          "type": "string"
+        },
+        "recipeName": {
+          "type": "string"
+        },
+        "recipeVersion": {
           "type": "integer"
         },
-        "timeUnit": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "amount",
-        "timeUnit"
-      ]
-    },
-    "originalWort": {
-      "type": "object",
-      "properties": {
-        "amount": {
-          "type": "number"
-        },
-        "ratioUnit": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "amount",
-        "ratioUnit"
-      ]
-    },
-    "bitterness": {
-      "type": "object",
-      "properties": {
-        "amount": {
-          "type": "integer"
-        },
-        "tasteUnit": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "amount",
-        "tasteUnit"
-      ]
-    },
-    "carbonDioxide": {
-      "type": "object",
-      "properties": {
-        "amount": {
-          "type": "integer"
-        },
-        "ratioUnit": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "amount",
-        "ratioUnit"
-      ]
-    },
-    "author": {
-      "type": "object",
-      "properties": {
-        "private": {
-          "type": "boolean"
-        },
-        "brewery": {
+        "createDate": {
           "type": "string"
         },
-        "brewMaster": {
+        "changeDate": {
           "type": "string"
         },
-        "url": {
+        "beerType": {
           "type": "string"
         },
-        "phone": {
-          "type": "string"
-        },
-        "address": {
+        "expectedEfficiency": {
           "type": "object",
           "properties": {
-            "street": {
-              "type": "string"
+            "amount": {
+              "type": "integer"
             },
-            "zip": {
-              "type": "string"
-            },
-            "city": {
-              "type": "string"
-            },
-            "federateState": {
-              "type": "string"
-            },
-            "country": {
+            "relativeUnit": {
               "type": "string"
             }
           },
           "required": [
-            "street",
-            "zip",
-            "city",
-            "federateState",
-            "country"
+            "amount",
+            "relativeUnit"
           ]
         },
-        "geo": {
+        "suggestedMashType": {
+          "type": "string"
+        },
+        "descriptions": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "language": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "language",
+                "text"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "language": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "language",
+                "text"
+              ]
+            }
+          ]
+        },
+        "author": {
           "type": "object",
           "properties": {
-            "latitude": {
-              "type": "number"
+            "commercialBrewery": {
+              "type": "boolean"
             },
-            "longitude": {
-              "type": "number"
+            "breweryName": {
+              "type": "string"
+            },
+            "brewMasterName": {
+              "type": "string"
+            },
+            "breweryUrl": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "address": {
+              "type": "object",
+              "properties": {
+                "street": {
+                  "type": "string"
+                },
+                "houseNumber": {
+                  "type": "string"
+                },
+                "zip": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "federateState": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "street",
+                "houseNumber",
+                "zip",
+                "city",
+                "federateState",
+                "country"
+              ]
             }
           },
           "required": [
-            "latitude",
-            "longitude"
+            "commercialBrewery",
+            "breweryName",
+            "brewMasterName",
+            "breweryUrl",
+            "phone",
+            "address"
           ]
         }
       },
       "required": [
-        "private",
-        "brewery",
-        "brewMaster",
-        "url",
-        "phone",
-        "address",
-        "geo"
+        "openBrewVersion",
+        "encoding",
+        "recipeName",
+        "recipeVersion",
+        "createDate",
+        "changeDate",
+        "beerType",
+        "expectedEfficiency",
+        "suggestedMashType",
+        "descriptions",
+        "author"
+      ]
+    },
+    "batchVitalStatistics": {
+      "type": "object",
+      "properties": {
+        "expectedOriginalGravity": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "ratioUnit": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "ratioUnit"
+          ]
+        },
+        "expectedFinalGravity": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "ratioUnit": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "ratioUnit"
+          ]
+        },
+        "alcoholContent": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "ratioUnit": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "ratioUnit"
+          ]
+        },
+        "bitterness": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "integer"
+            },
+            "tasteUnit": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "tasteUnit"
+          ]
+        },
+        "carbonationLevel": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "integer"
+            },
+            "ratioUnit": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "ratioUnit"
+          ]
+        }
+      },
+      "required": [
+        "expectedOriginalGravity",
+        "expectedFinalGravity",
+        "alcoholContent",
+        "bitterness",
+        "carbonationLevel"
       ]
     },
     "ingredients": {
@@ -192,124 +260,190 @@
                 "amount",
                 "chemicalUnit"
               ]
-            }
-          },
-          "required": [
-            "alkalinity"
-          ]
-        },
-        "solids": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "type": "string"
-              },
-              "type": {
-                "type": "string"
-              },
-              "relativeAmount": {
-                "type": "object",
-                "properties": {
-                  "amount": {
-                    "type": "integer"
-                  },
-                  "ratioUnit": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "amount",
-                  "ratioUnit"
-                ]
-              },
-              "colour": {
-                "type": "object",
-                "properties": {
-                  "amount": {
-                    "type": "integer"
-                  },
-                  "colourUnit": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "amount",
-                  "colourUnit"
-                ]
-              }
             },
-            "required": [
-              "name",
-              "type",
-              "relativeAmount",
-              "colour"
-            ]
-          }
-        },
-        "yeast": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "yeastAmount": {
+            "mashWater": {
               "type": "object",
               "properties": {
                 "amount": {
                   "type": "integer"
                 },
-                "ratioUnit": {
+                "volumeUnit": {
                   "type": "string"
                 }
               },
               "required": [
                 "amount",
-                "ratioUnit"
+                "volumeUnit"
               ]
             },
-            "starterNeeded": {
-              "type": "boolean"
+            "spargeWater": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "integer"
+                },
+                "volumeUnit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "amount",
+                "volumeUnit"
+              ]
             }
           },
           "required": [
-            "name",
-            "yeastAmount",
-            "starterNeeded"
+            "alkalinity",
+            "mashWater",
+            "spargeWater"
+          ]
+        },
+        "solids": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "color": {
+                  "type": "object",
+                  "properties": {
+                    "amount": {
+                      "type": "integer"
+                    },
+                    "colorUnit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "amount",
+                    "colorUnit"
+                  ]
+                }
+              },
+              "required": [
+                "name",
+                "type",
+                "color"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "color": {
+                  "type": "object",
+                  "properties": {
+                    "amount": {
+                      "type": "integer"
+                    },
+                    "colorUnit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "amount",
+                    "colorUnit"
+                  ]
+                }
+              },
+              "required": [
+                "name",
+                "type",
+                "color"
+              ]
+            }
           ]
         },
         "hops": {
           "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "type": "string"
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "alphaAcid": {
+                  "type": "object",
+                  "properties": {
+                    "amount": {
+                      "type": "number"
+                    },
+                    "chemicalUnit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "amount",
+                    "chemicalUnit"
+                  ]
+                },
+                "shape": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
               },
-              "alpha": {
-                "type": "number"
-              },
-              "shape": {
-                "type": "string"
-              },
-              "type": {
-                "type": "string"
-              }
+              "required": [
+                "name",
+                "alphaAcid",
+                "shape",
+                "type"
+              ]
             },
-            "required": [
-              "name",
-              "alpha",
-              "shape",
-              "type"
-            ]
-          }
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "alphaAcid": {
+                  "type": "object",
+                  "properties": {
+                    "amount": {
+                      "type": "number"
+                    },
+                    "chemicalUnit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "amount",
+                    "chemicalUnit"
+                  ]
+                },
+                "shape": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "alphaAcid",
+                "shape",
+                "type"
+              ]
+            }
+          ]
         }
       },
       "required": [
         "water",
         "solids",
-        "yeast",
         "hops"
       ]
     },
@@ -336,53 +470,196 @@
             },
             "rests": {
               "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "withStirring": {
-                    "type": "boolean"
-                  },
-                  "targetTemperature": {
-                    "type": "object",
-                    "properties": {
-                      "amount": {
-                        "type": "integer"
-                      },
-                      "tempUnit": {
-                        "type": "string"
-                      }
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
                     },
-                    "required": [
-                      "amount",
-                      "tempUnit"
-                    ]
-                  },
-                  "restingTime": {
-                    "type": "object",
-                    "properties": {
-                      "amount": {
-                        "type": "integer"
-                      },
-                      "timeUnit": {
-                        "type": "string"
-                      }
+                    "withStirring": {
+                      "type": "boolean"
                     },
-                    "required": [
-                      "amount",
-                      "timeUnit"
-                    ]
-                  }
+                    "targetTemperature": {
+                      "type": "object",
+                      "properties": {
+                        "amount": {
+                          "type": "integer"
+                        },
+                        "tempUnit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "amount",
+                        "tempUnit"
+                      ]
+                    },
+                    "restingTime": {
+                      "type": "object",
+                      "properties": {
+                        "amount": {
+                          "type": "integer"
+                        },
+                        "timeUnit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "amount",
+                        "timeUnit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "withStirring",
+                    "targetTemperature",
+                    "restingTime"
+                  ]
                 },
-                "required": [
-                  "name",
-                  "withStirring",
-                  "targetTemperature",
-                  "restingTime"
-                ]
-              }
+                {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "withStirring": {
+                      "type": "boolean"
+                    },
+                    "targetTemperature": {
+                      "type": "object",
+                      "properties": {
+                        "amount": {
+                          "type": "integer"
+                        },
+                        "tempUnit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "amount",
+                        "tempUnit"
+                      ]
+                    },
+                    "restingTime": {
+                      "type": "object",
+                      "properties": {
+                        "amount": {
+                          "type": "integer"
+                        },
+                        "timeUnit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "amount",
+                        "timeUnit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "withStirring",
+                    "targetTemperature",
+                    "restingTime"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "withStirring": {
+                      "type": "boolean"
+                    },
+                    "targetTemperature": {
+                      "type": "object",
+                      "properties": {
+                        "amount": {
+                          "type": "integer"
+                        },
+                        "tempUnit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "amount",
+                        "tempUnit"
+                      ]
+                    },
+                    "restingTime": {
+                      "type": "object",
+                      "properties": {
+                        "amount": {
+                          "type": "integer"
+                        },
+                        "timeUnit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "amount",
+                        "timeUnit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "withStirring",
+                    "targetTemperature",
+                    "restingTime"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "withStirring": {
+                      "type": "boolean"
+                    },
+                    "targetTemperature": {
+                      "type": "object",
+                      "properties": {
+                        "amount": {
+                          "type": "integer"
+                        },
+                        "tempUnit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "amount",
+                        "tempUnit"
+                      ]
+                    },
+                    "restingTime": {
+                      "type": "object",
+                      "properties": {
+                        "amount": {
+                          "type": "integer"
+                        },
+                        "timeUnit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "amount",
+                        "timeUnit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "withStirring",
+                    "targetTemperature",
+                    "restingTime"
+                  ]
+                }
+              ]
             }
           },
           "required": [
@@ -390,50 +667,175 @@
             "rests"
           ]
         },
-        "sparging": {
-          "type": "object",
-          "properties": {
-            "missing": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "missing"
-          ]
+        "lautering": {
+          "type": "object"
+        },
+        "cooking": {
+          "type": "object"
         },
         "fermentation": {
           "type": "object",
           "properties": {
-            "missing": {
-              "type": "string"
+            "yeast": {
+              "type": "object",
+              "properties": {
+                "yeastName": {
+                  "type": "string"
+                },
+                "yeastType": {
+                  "type": "string"
+                },
+                "yeastAmount": {
+                  "type": "object",
+                  "properties": {
+                    "amount": {
+                      "type": "integer"
+                    },
+                    "weightUnit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "amount",
+                    "weightUnit"
+                  ]
+                },
+                "yeastStarterNeeded": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "yeastName",
+                "yeastType",
+                "yeastAmount",
+                "yeastStarterNeeded"
+              ]
+            },
+            "targetTemperature": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "integer"
+                },
+                "tempUnit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "amount",
+                "tempUnit"
+              ]
+            },
+            "apparentAttenuation": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "number"
+                },
+                "ratioUnit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "amount",
+                "ratioUnit"
+              ]
             }
           },
           "required": [
-            "missing"
+            "yeast",
+            "targetTemperature",
+            "apparentAttenuation"
+          ]
+        },
+        "matureProcess": {
+          "type": "object",
+          "properties": {
+            "targetTemperature": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "number"
+                },
+                "tempUnit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "amount",
+                "tempUnit"
+              ]
+            },
+            "restingTime": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "integer"
+                },
+                "timeUnit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "amount",
+                "timeUnit"
+              ]
+            },
+            "descriptions": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "language": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "language",
+                    "text"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "language": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "language",
+                    "text"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "targetTemperature",
+            "restingTime",
+            "descriptions"
           ]
         }
       },
       "required": [
         "mashing",
-        "sparging",
-        "fermentation"
+        "lautering",
+        "cooking",
+        "fermentation",
+        "matureProcess"
       ]
     }
   },
   "required": [
-    "openBrewVersion",
-    "encoding",
-    "recipeName",
-    "recipeVersion",
-    "createDate",
-    "changeDate",
-    "brewStyle",
-    "descriptions",
-    "matureTime",
-    "originalWort",
-    "bitterness",
-    "carbonDioxide",
-    "author",
+    "info",
+    "batchVitalStatistics",
     "ingredients",
     "brewing"
   ]
