@@ -26,4 +26,4 @@ jobs:
         aws-region: ${{ env.AWS_REGION }}
 
     - name: Deploy definitions S3 bucket
-        run: aws s3 sync ./v1.0.0/ s3://openbrew-definition-prod --delete
+      run: aws s3 sync ./v1.0.0/ s3://openbrew-definition-prod --delete
