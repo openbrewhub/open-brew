@@ -1,16 +1,12 @@
 {
+	"openBrewVersion": "1.0.0",
+	"encoding": "UTF-8",
 	"info": {
-	  "openBrewVersion": "1.0.0",
-	  "encoding": "UTF-8",
 	  "recipeName": "Deppendorfer Durstdoldensud",
 	  "recipeVersion": 1,
 	  "createDate": "2017-01-22T16:48:13+00:00",
 	  "changeDate": "2017-01-26T19:47:27+00:00",
 	  "beerType": "Amber Lager",
-	  "expectedEfficiency": {
-		  "amount": 75,
-		  "relativeUnit": "percent"
-	  },
 	  "suggestedMashType": "Basic Infusion Mash - Step / Multistep Mashing - Decoction Mash",
 	  "descriptions": [
 		{
@@ -38,27 +34,31 @@
 		}
 	  }
 	},
-	"batchVitalStatistics": {
-	  "expectedOriginalGravity": {
+	"vitalStatistics": {
+		"expectedEfficiency": {
+			"amount": 75,
+			"relativeUnit": "percent"
+		},
+		"expectedOriginalGravity": {
 		"amount": 13.5,
 		"ratioUnit": "degreePlato"
-	  },
-	  "expectedFinalGravity": {
+		},
+		"expectedFinalGravity": {
 		"amount": 3.9,
 		"ratioUnit": "degreePlato"
-	  },
-	  "alcoholContent": {
+		},
+		"alcoholContent": {
 		"amount": 4.8,
 		"ratioUnit": "volumePercent"
-	  },
-	  "bitterness": {
+		},
+		"bitterness": {
 		"amount": 26,
 		"tasteUnit": "ibu"
-	  },
-	  "carbonationLevel": {
+		},
+		"carbonationLevel": {
 		"amount": 5,
 		"ratioUnit": "gramsPerLiter"
-	  }
+		}
 	},
 	"ingredients": {
 	  "water": {
