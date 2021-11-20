@@ -1,0 +1,216 @@
+[
+    {
+        "de-DE": "Nachisomerisierung",
+        "en-US": "Post isomerization"
+    },
+    {
+        "de-DE": "anschwänzen",
+        "en-US": "lauter"
+    },    
+    {
+        "de-DE": "Amylase",
+        "en-US": "Amylase"
+    },    
+    {
+        "de-DE": "Treber",
+        "en-US": "Spent grain"
+    },    
+    {
+        "de-DE": "Jodtest",
+        "en-US": "Iodine test"
+    },    
+    {
+        "de-DE": "Würze",
+        "en-US": "Wort"
+    },    
+    {
+        "de-DE": "Hopfung",
+        "en-US": "Hop schedule"
+    },    
+    {
+        "de-DE": "Stammwürze",
+        "en-US": "Original gravity"
+    },    
+    {
+        "de-DE": "Spindel",
+        "en-US": "Hydrometer"
+    },    
+    {
+        "de-DE": "Refraktometer",
+        "en-US": "Refractometer"
+    },    
+    {
+        "de-DE": "Sud",
+        "en-US": "Brew"
+    },    
+    {
+        "de-DE": "vergoren",
+        "en-US": "fermented"
+    },    
+    {
+        "de-DE": "hopfenstopfen",
+        "en-US": "dry hop"
+    },    
+    {
+        "de-DE": "Nachisomerisierung",
+        "en-US": ""
+    },    
+    {
+        "de-DE": "Nachisomerisierung",
+        "en-US": ""
+    },    
+    {
+        "de-DE": "Nachisomerisierung",
+        "en-US": ""
+    },    
+    {
+        "de-DE": "Nachisomerisierung",
+        "en-US": ""
+    },    
+    {
+        "de-DE": "Nachisomerisierung",
+        "en-US": ""
+    },    
+    {
+        "de-DE": "Nachisomerisierung",
+        "en-US": ""
+    },    
+    {
+        "de-DE": "Nachisomerisierung",
+        "en-US": ""
+    },    
+    {
+        "de-DE": "Nachisomerisierung",
+        "en-US": ""
+    },    
+    {
+        "de-DE": "Nachisomerisierung",
+        "en-US": ""
+    },    
+    {
+        "de-DE": "Nachguss",
+        "en-US": "Sparge water"
+    },    
+    {
+        "de-DE": "Hauptguss",
+        "en-US": "Mash water"
+    },   
+    {
+        "de-DE": "Läuterbottich",
+        "en-US": "Lauter tun"
+    },    
+    {
+        "de-DE": "Maischepfanne",
+        "en-US": "Mash kettle"
+    },    
+    {
+        "de-DE": "Maischebottich",
+        "en-US": "Mash tun"
+    },    
+    {
+        "de-DE": "schroten",
+        "en-US": "mill"
+    },    
+    {
+        "de-DE": "Maische",
+        "en-US": "Mash"
+    },
+    {
+        "de-DE": "Sudwerk",
+        "en-US": "Lager House"
+    },    
+    {
+        "de-DE": "Sudhaus",
+        "en-US": "Brew House"
+    },    
+    {
+        "de-DE": "Wasser",
+        "en-US": "Water"
+    },    
+    {
+        "de-DE": "Hefe",
+        "en-US": "Yeast"
+    },    
+    {
+        "de-DE": "Gerste",
+        "en-US": "Barley"
+    },    
+    {
+        "de-DE": "Hopfen",
+        "en-US": "Hop"
+    },    
+    {
+        "de-DE": "Malz",
+        "en-US": "Malt"
+    },    
+    {
+        "de-DE": "Getreide",
+        "en-US": "Grain"
+    },    
+    {
+        "de-DE": "Weizenrast",
+        "en-US": "Glucans rest"
+    },    
+    {
+        "de-DE": "Gummirast",
+        "en-US": "Acid rest"
+    },    
+    {
+        "de-DE": "Scheinbarer Endvergärungsgrad",
+        "en-US": "Apparent attenuation"
+    },    
+    {
+        "de-DE": "Tatsächlicher Endvergärungsgrad",
+        "en-US": "Final attenuation"
+    },    
+    {
+        "de-DE": "Restextrakt",
+        "en-US": "Residual extract"
+    },    
+    {
+        "de-DE": "Hopfenseihen",
+        "en-US": "Hop filtering"
+    },    
+    {
+        "de-DE": "Schüttungsmenge",
+        "en-US": "Amount of grain"
+    },    
+    {
+        "de-DE": "Verdampfungsziffer",
+        "en-US": "Evaporation figure"
+    },    
+    {
+        "de-DE": "Sudhausausbeute",
+        "en-US": "Mashing efficiency"
+    },    
+    {
+        "de-DE": "effektive Sudhausausbeute",
+        "en-US": "Brewhouse efficiency",
+        "checkThisAgain": true
+    },    
+    {
+        "de-DE": "Schnellvergärprobe",
+        "en-US": "Fast fermentation sample"
+    },    
+    {
+        "de-DE": "Traubenzucker",
+        "en-US": "Corn sugar"
+    },    
+    {
+        "de-DE": "Haushaltszucker",
+        "en-US": "Table sugar"
+    },     
+    {
+        "de-DE": "Spundungsdruck",
+        "en-US": "Bung pressure"
+    },    
+    {
+        "de-DE": "Grünschlauchzeitpunkt",
+        "en-US": "Green bottling time",
+        "checkThisAgain": true
+    },    
+    {
+        "de-DE": "Schnellgärverlauf",
+        "en-US": "Progress of fast fermentation sample"
+    }
+]
