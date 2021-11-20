@@ -176,6 +176,10 @@
 		  "overallCookingTime": {
 			  "amount": 90,
 			  "timeUnit": "minutes"
+		  },
+		  "targetTemperature": {
+			"amount": 100,
+			"tempUnit": "celsius"
 		  }
 	  },
 	  "fermentation": {
