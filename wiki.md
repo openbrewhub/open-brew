@@ -54,6 +54,7 @@ Some elements need a concrete specification of their unit types. The supported u
 | tasteUnit   | string | ibu                                     |
 | chemicalUnit| string | dh, ppm                                 |
 | colorUnit   | string | srm, lovibond, ebc                      |
+| weightUnit  | string | grams, kilograms                        |
 
 #### Unit Type Value Description
 | Value         | Display Hint     | Description                                                                 |
