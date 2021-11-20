@@ -2,12 +2,14 @@
 	"openBrewVersion": "1.0.0",
 	"encoding": "UTF-8",
 	"info": {
-	  "recipeName": "Deppendorfer Durstdoldensud",
+	  "recipeName": "Schwabacher Herbstgold Hefeweizen",
 	  "recipeVersion": 1,
-	  "createDate": "2017-01-22T16:48:13+00:00",
-	  "changeDate": "2017-01-26T19:47:27+00:00",
-	  "beerType": "Amber Lager",
+	  "createDate": "2021-09-11T16:48:13+00:00",
+	  "changeDate": "2021-09-11T19:47:27+00:00",
+	  "beerType": "Helles Hefeweizen",
+	  "_comment1": "Enum for above 'beerType'?",
 	  "suggestedMashType": "Basic Infusion Mash - Step / Multistep Mashing - Decoction Mash",
+	  "_comment2": "Enum for above 'beerType'?",
 	  "descriptions": [
 		{
 		  "language": "en",
@@ -20,15 +22,15 @@
 	  ],
 	  "author": {
 		"commercialBrewery": false,
-		"breweryName": "Hopfen Doldis",
-		"brewMasterName": "Max Mustermann",
+		"breweryName": "holdmybeer",
+		"brewMasterName": "René Fehlow und Sven Ulrich",
 		"breweryUrl": "http://holdmybeer.de",
 		"phone": "+49 911 123456789",
 		"address": {
-		  "street": "Examplestreet",
-		  "houseNumber": "14a",
-		  "zip": "90411",
-		  "city": "Nuremberg",
+		  "street": "Nadlerstr.",
+		  "houseNumber": "12",
+		  "zip": "91126",
+		  "city": "Schwabach",
 		  "federateState": "Bavaria",
 		  "country": "Germany"
 		}
@@ -36,29 +38,39 @@
 	},
 	"vitalStatistics": {
 		"expectedEfficiency": {
-			"amount": 75,
+			"amount": 62,
 			"relativeUnit": "percent"
 		},
 		"expectedOriginalGravity": {
-		"amount": 13.5,
+		"amount": 13.85,
 		"ratioUnit": "degreePlato"
 		},
 		"expectedFinalGravity": {
-		"amount": 3.9,
+		"amount": 3.5,
 		"ratioUnit": "degreePlato"
 		},
 		"alcoholContent": {
-		"amount": 4.8,
+		"amount": 6.3,
 		"ratioUnit": "volumePercent"
 		},
+		"PhValue": {
+			"amount": 4.31,
+			"chemicalUnit": "ph",
+			"_comment3": "Add ph as enum value for chemicalUnit"
+		},
+		"_comment": "Laboratory stuff like the analysis of our wheat beer from Leikeim?",
 		"bitterness": {
-		"amount": 26,
+		"amount": 15,
 		"tasteUnit": "ibu"
 		},
 		"carbonationLevel": {
 		"amount": 5,
 		"ratioUnit": "gramsPerLiter"
-		}
+		},
+		"color": {
+			"amount": 11.3,
+			"colorUnit": "ebc"
+		  }
 	},
 	"ingredients": {
 	  "water": {
@@ -66,10 +78,7 @@
 		  "amount": 1.1,
 		  "chemicalUnit": "dh"
 		},
-		"mashWater": {
-		  "amount": 23,
-		  "volumeUnit": "liter"
-		},
+
 		"spargeWater": {
 		  "amount": 16,
 		  "volumeUnit": "liter"
@@ -79,16 +88,16 @@
 		{
 		  "name": "Hallertau Magnum",
 		  "alphaAcid": {
-			"amount": 14.5,
+			"amount": 12.1,
 			"chemicalUnit": "alphaAcid"
 		  },
 		  "shape": "pellet",
 		  "type": "bitter"
 		},
 		{
-		  "name": "Spalter Select",
+		  "name": "Hallertau Saphir",
 		  "alphaAcid": {
-			"amount": 5.5,
+			"amount": 4.1,
 			"chemicalUnit": "alphaAcid"
 		  },
 		  "shape": "pellet",
@@ -98,58 +107,54 @@
 	},
 	"brewing": {
 	  "mashing": {
+		"mashWater": {
+			"amount": 23,
+			"volumeUnit": "liter"
+		  },
 		"solids": [
+			{
+			  "name": "Weizenmalz",
+			  "type": "grain",
+			  "portion": {
+				"amount": 2250.0,
+				"weightUnit": "grams"
+			  }
+			},
 			{
 			  "name": "Pilsener Malz",
 			  "type": "grain",
-			  "color": {
-				"amount": 23,
-				"colorUnit": "ebc"
+			  "portion": {
+				"amount": 2750.0,
+				"weightUnit": "grams"
 			  }
 			},
 			{
-			  "name": "Münchner Malz II",
-			  "type": "grain",
-			  "color": {
-				"amount": 23,
-				"colorUnit": "ebc"
+				"name": "Karamell Malz",
+				"type": "grain",
+				"portion": {
+				  "amount": 200.0,
+				  "weightUnit": "grams"
+				}
 			  }
-			}
-		  ],	
-		"mashInTemperature": {
-		  "amount": 57,
-		  "tempUnit": "celsius"
-		},
+		  ],
 		"rests": [
 		  {
-			"name": "Eiweißrast",
+			"name": "Einmaischen",
 			"withStirring": true,
 			"targetTemperature": {
-			  "amount": 57,
-			  "tempUnit": "celsius"
+				"amount": 47,
+				"tempUnit": "celsius"
 			},
 			"restingTime": {
-			  "amount": 10,
-			  "timeUnit": "minutes"
+				"amount": 2,
+				"timeUnit": "minutes"
 			}
 		  },
 		  {
 			"name": "Maltoserast",
 			"withStirring": true,
 			"targetTemperature": {
-			  "amount": 63,
-			  "tempUnit": "celsius"
-			},
-			"restingTime": {
-			  "amount": 40,
-			  "timeUnit": "minutes"
-			}
-		  },
-		  {
-			"name": "Verzuckerung",
-			"withStirring": true,
-			"targetTemperature": {
-			  "amount": 73,
+			  "amount": 62,
 			  "tempUnit": "celsius"
 			},
 			"restingTime": {
@@ -158,20 +163,46 @@
 			}
 		  },
 		  {
-			"name": "Abmaischen",
+			"name": "Verzuckerungsrast 1",
 			"withStirring": true,
 			"targetTemperature": {
-			  "amount": 78,
+			  "amount": 68,
 			  "tempUnit": "celsius"
 			},
 			"restingTime": {
-			  "amount": 0,
+			  "amount": 25,
+			  "timeUnit": "minutes"
+			}
+		  },
+		  {
+			"name": "Verzuckerungsrast 2",
+			"withStirring": true,
+			"targetTemperature": {
+			  "amount": 72,
+			  "tempUnit": "celsius"
+			},
+			"restingTime": {
+			  "amount": 30,
+			  "timeUnit": "minutes"
+			}
+		  },
+		  {
+			"name": "Abmaischen",
+			"withStirring": true,
+			"targetTemperature": {
+			  "amount": 80,
+			  "tempUnit": "celsius"
+			},
+			"restingTime": {
+			  "amount": 1,
 			  "timeUnit": "minutes"
 			}
 		  }
 		]
 	  },
-	  "lautering": {},
+	  "lautering": {
+
+	  },
 	  "cooking": {
 		  "overallCookingTime": {
 			  "amount": 90,
