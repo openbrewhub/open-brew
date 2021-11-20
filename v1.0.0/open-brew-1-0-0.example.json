@@ -58,6 +58,10 @@
 			"chemicalUnit": "ph",
 			"_comment3": "Add ph as enum value for chemicalUnit"
 		},
+		"waterAlkalinity": {
+			"amount": 1.1,
+			"chemicalUnit": "dh"
+		  },
 		"_comment": "Laboratory stuff like the analysis of our wheat beer from Leikeim?",
 		"bitterness": {
 		"amount": 15,
@@ -72,45 +76,21 @@
 			"colorUnit": "ebc"
 		  }
 	},
-	"ingredients": {
-	  "water": {
-		"alkalinity": {
-		  "amount": 1.1,
-		  "chemicalUnit": "dh"
-		},
-
-		"spargeWater": {
-		  "amount": 16,
-		  "volumeUnit": "liter"
-		}
-	  },
-	  "hops": [
-		{
-		  "name": "Hallertau Magnum",
-		  "alphaAcid": {
-			"amount": 12.1,
-			"chemicalUnit": "alphaAcid"
-		  },
-		  "shape": "pellet",
-		  "type": "bitter"
-		},
-		{
-		  "name": "Hallertau Saphir",
-		  "alphaAcid": {
-			"amount": 4.1,
-			"chemicalUnit": "alphaAcid"
-		  },
-		  "shape": "pellet",
-		  "type": "aroma"
-		}
-	  ]
-	},
 	"brewing": {
 	  "mashing": {
 		"mashWater": {
-			"amount": 23,
-			"volumeUnit": "liter"
-		  },
+			"water": {
+				"amount": 23,
+				"volumeUnit": "liter"
+			  },
+			"waterTreatment": [
+			{
+				"type": "Milchsäure",
+				"amount": 11.0,
+				"volumeUnit": "milliliter"
+			}
+		]
+		},
 		"solids": [
 			{
 			  "name": "Weizenmalz",
@@ -201,7 +181,24 @@
 		]
 	  },
 	  "lautering": {
-
+		"withStirring": false,
+		"restingTime": {
+			"amount": 20,
+			"timeUnit": "minutes"
+		  },
+		  "spargeWater": {
+			"water": {
+				"amount": 23,
+				"volumeUnit": "liter"
+			  },
+			"waterTreatment": [
+			{
+				"type": "Milchsäure",
+				"amount": 11.0,
+				"volumeUnit": "milliliter"
+			}
+		]
+		}
 	  },
 	  "cooking": {
 		  "overallCookingTime": {
@@ -211,7 +208,27 @@
 		  "targetTemperature": {
 			"amount": 100,
 			"tempUnit": "celsius"
-		  }
+		  },
+		  "hops": [
+			{
+			  "name": "Hallertau Magnum",
+			  "alphaAcid": {
+				"amount": 12.1,
+				"chemicalUnit": "alphaAcid"
+			  },
+			  "shape": "pellet",
+			  "type": "bitter"
+			},
+			{
+			  "name": "Hallertau Saphir",
+			  "alphaAcid": {
+				"amount": 4.1,
+				"chemicalUnit": "alphaAcid"
+			  },
+			  "shape": "pellet",
+			  "type": "aroma"
+			}
+		  ]
 	  },
 	  "fermentation": {
 		"yeast": {
@@ -230,6 +247,9 @@
 		"apparentAttenuation": {
 		  "amount": 3.9,
 		  "ratioUnit": "degreePlato"
+		},
+		"secondaryFermentation": {
+			"_comment4": "Add stuff for this!"
 		}
 	  },
 	  "matureProcess": {
