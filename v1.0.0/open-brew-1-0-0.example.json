@@ -7,6 +7,7 @@
 	  "createDate": "2021-09-11T16:48:13+00:00",
 	  "changeDate": "2021-09-11T19:47:27+00:00",
 	  "beerType": "Helles Hefeweizen",
+	  "_comment0": "Photos as links?",
 	  "_comment1": "Enum for above 'beerType'?",
 	  "suggestedMashType": "Basic Infusion Mash - Step / Multistep Mashing - Decoction Mash",
 	  "_comment2": "Enum for above 'beerType'?",
