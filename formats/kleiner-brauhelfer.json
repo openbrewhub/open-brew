@@ -1,0 +1,191 @@
+{
+    "Etiketten": [
+        {
+            "AbstandHor": 2,
+            "AbstandVert": 2,
+            "Anzahl": 20,
+            "Ausrichtung": 0,
+            "Breite": 185,
+            "Hoehe": 20,
+            "Papiergroesse": 0,
+            "Pfad": "D:/Braugarage/KleinerBrauhelfer/build-kleiner-brauhelfer-2-Desktop_Qt_5_15_0_MSVC2019_64bit-Debug/bin/data/Etiketten/streifen_simpel_farbig_nummeriert.svg",
+            "RandLinks": 5,
+            "RandOben": 10,
+            "RandRechts": 5,
+            "RandUnten": 15
+        }
+    ],
+    "Global": {
+        "db_Version": 2006
+    },
+    "Hefegaben": [
+        {
+            "Menge": 1,
+            "Name": "Fermentis SafAle US-05",
+            "ZugabeNach": 0,
+            "Zugegeben": 0
+        }
+    ],
+    "Hopfengaben": [
+        {
+            "Alpha": 15,
+            "Name": "Magnum",
+            "Pellets": 1,
+            "Prozent": 12.5,
+            "Vorderwuerze": 3,
+            "Zeit": 60,
+            "erg_Menge": 8.769751329402755
+        },
+        {
+            "Alpha": 10,
+            "Name": "Perle",
+            "Pellets": 1,
+            "Prozent": 12.5,
+            "Vorderwuerze": 3,
+            "Zeit": 30,
+            "erg_Menge": 8.769751329402755
+        },
+        {
+            "Alpha": 6.5,
+            "Name": "Cascade",
+            "Pellets": 1,
+            "Prozent": 25,
+            "Vorderwuerze": 3,
+            "Zeit": 10,
+            "erg_Menge": 17.53950265880551
+        },
+        {
+            "Alpha": 6.5,
+            "Name": "Cascade",
+            "Pellets": 1,
+            "Prozent": 50,
+            "Vorderwuerze": 5,
+            "Zeit": 0,
+            "erg_Menge": 35.07900531761102
+        }
+    ],
+    "Malzschuettung": [
+        {
+            "Farbe": 5,
+            "Name": "Pale Ale",
+            "Potential": "",
+            "Prozent": 91.66666666666666,
+            "erg_Menge": 4.215003929917797,
+            "pH": 5.75
+        },
+        {
+            "Farbe": 120,
+            "Name": "Cara Münch Typ II",
+            "Potential": 1.033,
+            "Prozent": 8.333333333333332,
+            "erg_Menge": 0.38318217544707245,
+            "pH": 4.69
+        }
+    ],
+    "Rasten": [
+        {
+            "Dauer": 1,
+            "Mengenfaktor": 1,
+            "Name": "Einmaischen",
+            "Param1": 72.51917654209628,
+            "Param2": 0,
+            "Param3": 18,
+            "Param4": 0,
+            "Temp": 67,
+            "Typ": 0
+        },
+        {
+            "Dauer": 60,
+            "Mengenfaktor": 1,
+            "Name": "Maltoserast (1. Verzuckerung)",
+            "Param1": 0,
+            "Param2": 0,
+            "Param3": 0,
+            "Param4": 0,
+            "Temp": 63,
+            "Typ": 1
+        },
+        {
+            "Dauer": 15,
+            "Mengenfaktor": 1,
+            "Name": "Verzuckerungsrast (2. Verzuckerung)",
+            "Param1": 0,
+            "Param2": 0,
+            "Param3": 0,
+            "Param4": 0,
+            "Temp": 72,
+            "Typ": 1
+        },
+        {
+            "Dauer": 1,
+            "Mengenfaktor": 1,
+            "Name": "Abmaischen",
+            "Param1": 0,
+            "Param2": 0,
+            "Param3": 0,
+            "Param4": 0,
+            "Temp": 78,
+            "Typ": 1
+        }
+    ],
+    "Sud": {
+        "Abfuelldatum": "",
+        "Anlage": "Meine Brauanlage",
+        "AusbeuteIgnorieren": 0,
+        "BemerkungAbfuellen": "",
+        "BemerkungBrauen": "",
+        "BemerkungGaerung": "",
+        "Braudatum": "",
+        "CO2": 5,
+        "Erstellt": "2021-02-13T10:00:01.000",
+        "FaktorHauptguss": 3.599999999999999,
+        "Gespeichert": "2021-11-19T20:12:06.000",
+        "IBU": 37,
+        "JungbiermengeAbfuellen": 20.000000000000014,
+        "Kategorie": "",
+        "Kochdauer": 70,
+        "Kommentar": "Letzte Hopfengabe beim Ausschlagen wenn ~80°C, auch Whirlpoolgabe genannt. Ergibt weniger Bittere, die Fruchtigkeit desCascade-Aromas wird betont.\n\nEmpfohlene Gärtemperatur: 20°C konstant.\n",
+        "KostenWasserStrom": 0,
+        "Menge": 19.99999999999993,
+        "MerklistenID": 0,
+        "Nachisomerisierungszeit": 5,
+        "Reifezeit": 4,
+        "ReifungStart": "",
+        "RestalkalitaetSoll": 0,
+        "SW": 13.1,
+        "SWAnstellen": 13.1,
+        "SWJungbier": 2.8819999999999997,
+        "SWKochbeginn": 11.7,
+        "SWKochende": 13.1,
+        "SWSchnellgaerprobe": 2.8819999999999997,
+        "SchnellgaerprobeAktiv": 0,
+        "Speisemenge": 0,
+        "Spunden": 0,
+        "Status": 0,
+        "Sudhausausbeute": 60,
+        "Sudname": "Beispielsud Sierra Nevada Pale Ale",
+        "Sudnummer": 1,
+        "TemperaturJungbier": 12,
+        "TemperaturKarbonisierung": 12,
+        "Verdampfungsrate": 2,
+        "Vergaerungsgrad": 78,
+        "VerschneidungAbfuellen": 0,
+        "Wasserprofil": "Profil 1",
+        "WuerzemengeAnstellen": 20,
+        "WuerzemengeKochbeginn": 22.3,
+        "WuerzemengeKochende": 20,
+        "WuerzemengeVorHopfenseihen": 20,
+        "berechnungsArtHopfen": 0,
+        "erg_AbgefuellteBiermenge": 20.000000000000014,
+        "erg_Alkohol": 5.957074974980799,
+        "erg_EffektiveAusbeute": 60.000000000000206,
+        "erg_Farbe": 20.854166666666664,
+        "erg_Preis": 0,
+        "erg_S_Gesamt": 4.598186105364871,
+        "erg_Sudhausausbeute": 60.000000000000206,
+        "erg_WHauptguss": 16.55346997931353,
+        "erg_WNachguss": 10.194122015170008,
+        "erg_W_Gesamt": 26.747591994483535,
+        "highGravityFaktor": 0
+    }
+}
