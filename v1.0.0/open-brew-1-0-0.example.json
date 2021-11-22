@@ -2,39 +2,39 @@
 	"openBrewVersion": "1.0.0",
 	"encoding": "UTF-8",
 	"info": {
-	  "recipeName": "Schwabacher Herbstgold Hefeweizen",
-	  "recipeVersion": 1,
-	  "createDate": "2021-09-11T16:48:13+00:00",
-	  "changeDate": "2021-09-11T19:47:27+00:00",
-	  "beerType": "Helles Hefeweizen",
-	  "_comment0": "Photos as links?",
-	  "_comment1": "Enum for above 'beerType'?",
-	  "_comment2": "Enum for above 'beerType'?",
-	  "descriptions": [
-		{
-		  "language": "en",
-		  "text": "This great beer must be brewed with passion. Otherwise it won't taste good."
-		},
-		{
-		  "language": "de",
-		  "text": "Dieses großartige Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
+		"recipeName": "Schwabacher Herbstgold Hefeweizen",
+		"recipeVersion": 1,
+		"createDate": "2021-09-11T16:48:13+00:00",
+		"changeDate": "2021-09-11T19:47:27+00:00",
+		"beerType": "Helles Hefeweizen",
+		"_comment0": "Photos as links?",
+		"_comment1": "Enum for above 'beerType'?",
+		"_comment2": "Enum for above 'beerType'?",
+		"descriptions": [
+			{
+				"language": "en",
+				"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
+			},
+			{
+				"language": "de",
+				"text": "Dieses großartige Bier muss mit Leidenschaft gebraut werden. Sonst schmeckt es nicht gut."
+			}
+		],
+		"author": {
+			"commercialBrewery": false,
+			"breweryName": "holdmybeer",
+			"brewMasterName": "René Fehlow und Sven Ulrich",
+			"breweryUrl": "http://holdmybeer.de",
+			"phone": "+49 911 123456789",
+			"address": {
+				"street": "Nadlerstr.",
+				"houseNumber": "12",
+				"zip": "91126",
+				"city": "Schwabach",
+				"federateState": "Bavaria",
+				"country": "Germany"
+			}
 		}
-	  ],
-	  "author": {
-		"commercialBrewery": false,
-		"breweryName": "holdmybeer",
-		"brewMasterName": "René Fehlow und Sven Ulrich",
-		"breweryUrl": "http://holdmybeer.de",
-		"phone": "+49 911 123456789",
-		"address": {
-		  "street": "Nadlerstr.",
-		  "houseNumber": "12",
-		  "zip": "91126",
-		  "city": "Schwabach",
-		  "federateState": "Bavaria",
-		  "country": "Germany"
-		}
-	  }
 	},
 	"vitalStatistics": {
 		"expectedEfficiency": {
@@ -42,16 +42,16 @@
 			"relativeUnit": "percent"
 		},
 		"expectedOriginalGravity": {
-		"amount": 13.85,
-		"ratioUnit": "degreePlato"
+			"amount": 13.85,
+			"ratioUnit": "degreePlato"
 		},
 		"expectedFinalGravity": {
-		"amount": 3.5,
-		"ratioUnit": "degreePlato"
+			"amount": 3.5,
+			"ratioUnit": "degreePlato"
 		},
 		"alcoholContent": {
-		"amount": 6.3,
-		"ratioUnit": "volumePercent"
+			"amount": 6.3,
+			"ratioUnit": "volumePercent"
 		},
 		"PhValue": {
 			"amount": 4.31,
@@ -61,217 +61,221 @@
 		"waterAlkalinity": {
 			"amount": 1.1,
 			"chemicalUnit": "dh"
-		  },
+		},
 		"_comment": "Laboratory stuff like the analysis of our wheat beer from Leikeim?",
 		"bitterness": {
-		"amount": 15,
-		"tasteUnit": "ibu"
+			"amount": 15,
+			"tasteUnit": "ibu"
 		},
 		"carbonationLevel": {
-		"amount": 5,
-		"ratioUnit": "gramsPerLiter"
+			"amount": 5,
+			"ratioUnit": "gramsPerLiter"
 		},
 		"color": {
 			"amount": 11.3,
 			"colorUnit": "ebc"
-		  }
+		}
 	},
 	"brewing": {
-	  "mashing": {
-		"suggestedMashType": "Basic Infusion Mash - Step / Multistep Mashing - Decoction Mash",
-		"mashWater": {
-			"water": {
-				"amount": 23,
-				"volumeUnit": "liter"
-			  },
-			"waterTreatment": [
-			{
-				"type": "Milchsäure",
-				"amount": 11.0,
-				"volumeUnit": "milliliter"
-			}
-		]
-		},
-		"solids": [
-			{
-			  "name": "Weizenmalz",
-			  "type": "grain",
-			  "portion": {
-				"amount": 2250.0,
-				"weightUnit": "grams"
-			  }
+		"mashing": {
+			"suggestedMashType": "Basic Infusion Mash - Step / Multistep Mashing - Decoction Mash",
+			"mashWater": {
+				"water": {
+					"amount": 23,
+					"volumeUnit": "liter"
+				},
+				"waterTreatment": [
+					{
+						"type": "Milchsäure",
+						"amount": 11.0,
+						"volumeUnit": "milliliter"
+					}
+				]
 			},
-			{
-			  "name": "Pilsener Malz",
-			  "type": "grain",
-			  "portion": {
-				"amount": 2750.0,
-				"weightUnit": "grams"
-			  }
-			},
-			{
-				"name": "Karamell Malz",
-				"type": "grain",
-				"portion": {
-				  "amount": 200.0,
-				  "weightUnit": "grams"
+			"solids": [
+				{
+					"name": "Weizenmalz",
+					"type": "grain",
+					"portion": {
+						"amount": 2250.0,
+						"weightUnit": "grams"
+					}
+				},
+				{
+					"name": "Pilsener Malz",
+					"type": "grain",
+					"portion": {
+						"amount": 2750.0,
+						"weightUnit": "grams"
+					}
+				},
+				{
+					"name": "Karamell Malz",
+					"type": "grain",
+					"portion": {
+						"amount": 200.0,
+						"weightUnit": "grams"
+					}
 				}
-			  }
-		  ],
-		"rests": [
-		  {
-			"name": "Einmaischen",
-			"withStirring": true,
+			],
+			"rests": [
+				{
+					"name": "Einmaischen",
+					"withStirring": true,
+					"targetTemperature": {
+						"amount": 47,
+						"tempUnit": "celsius"
+					},
+					"restingTime": {
+						"amount": 2,
+						"timeUnit": "minutes"
+					}
+				},
+				{
+					"name": "Maltoserast",
+					"withStirring": true,
+					"targetTemperature": {
+						"amount": 62,
+						"tempUnit": "celsius"
+					},
+					"restingTime": {
+						"amount": 20,
+						"timeUnit": "minutes"
+					}
+				},
+				{
+					"name": "Verzuckerungsrast 1",
+					"withStirring": true,
+					"targetTemperature": {
+						"amount": 68,
+						"tempUnit": "celsius"
+					},
+					"restingTime": {
+						"amount": 25,
+						"timeUnit": "minutes"
+					}
+				},
+				{
+					"name": "Verzuckerungsrast 2",
+					"withStirring": true,
+					"targetTemperature": {
+						"amount": 72,
+						"tempUnit": "celsius"
+					},
+					"restingTime": {
+						"amount": 30,
+						"timeUnit": "minutes"
+					}
+				},
+				{
+					"name": "Abmaischen",
+					"withStirring": true,
+					"targetTemperature": {
+						"amount": 80,
+						"tempUnit": "celsius"
+					},
+					"restingTime": {
+						"amount": 1,
+						"timeUnit": "minutes"
+					}
+				}
+			]
+		},
+		"lautering": {
+			"withStirring": false,
+			"restingTime": {
+				"amount": 20,
+				"timeUnit": "minutes"
+			},
+			"spargeWater": {
+				"water": {
+					"amount": 23,
+					"volumeUnit": "liter"
+				},
+				"waterTreatment": [
+					{
+						"type": "Milchsäure",
+						"amount": 11.0,
+						"volumeUnit": "milliliter"
+					}
+				],
+				"targetTemperature": {
+					"amount": 80,
+					"tempUnit": "celsius"
+				}
+			}
+		},
+		"cooking": {
+			"overallCookingTime": {
+				"amount": 90,
+				"timeUnit": "minutes"
+			},
 			"targetTemperature": {
-				"amount": 47,
+				"amount": 100,
+				"tempUnit": "celsius"
+			},
+			"hops": [
+				{
+					"name": "Hallertau Magnum",
+					"alphaAcid": {
+						"amount": 12.1,
+						"chemicalUnit": "alphaAcid"
+					},
+					"shape": "pellet",
+					"type": "bitter"
+				},
+				{
+					"name": "Hallertau Saphir",
+					"alphaAcid": {
+						"amount": 4.1,
+						"chemicalUnit": "alphaAcid"
+					},
+					"shape": "pellet",
+					"type": "aroma"
+				}
+			]
+		},
+		"fermentation": {
+			"yeast": {
+				"yeastName": "Safale WB40",
+				"yeastType": "top-fermented",
+				"yeastAmount": {
+					"amount": 11,
+					"weightUnit": "grams"
+				},
+				"yeastStarterNeeded": true
+			},
+			"targetTemperature": {
+				"amount": 19,
+				"tempUnit": "celsius"
+			},
+			"apparentAttenuation": {
+				"amount": 3.9,
+				"ratioUnit": "degreePlato"
+			},
+			"secondaryFermentation": {
+				"_comment4": "Add stuff for this!"
+			}
+		},
+		"matureProcess": {
+			"targetTemperature": {
+				"amount": 2.5,
 				"tempUnit": "celsius"
 			},
 			"restingTime": {
-				"amount": 2,
-				"timeUnit": "minutes"
-			}
-		  },
-		  {
-			"name": "Maltoserast",
-			"withStirring": true,
-			"targetTemperature": {
-			  "amount": 62,
-			  "tempUnit": "celsius"
+				"amount": 4,
+				"timeUnit": "week"
 			},
-			"restingTime": {
-			  "amount": 20,
-			  "timeUnit": "minutes"
-			}
-		  },
-		  {
-			"name": "Verzuckerungsrast 1",
-			"withStirring": true,
-			"targetTemperature": {
-			  "amount": 68,
-			  "tempUnit": "celsius"
-			},
-			"restingTime": {
-			  "amount": 25,
-			  "timeUnit": "minutes"
-			}
-		  },
-		  {
-			"name": "Verzuckerungsrast 2",
-			"withStirring": true,
-			"targetTemperature": {
-			  "amount": 72,
-			  "tempUnit": "celsius"
-			},
-			"restingTime": {
-			  "amount": 30,
-			  "timeUnit": "minutes"
-			}
-		  },
-		  {
-			"name": "Abmaischen",
-			"withStirring": true,
-			"targetTemperature": {
-			  "amount": 80,
-			  "tempUnit": "celsius"
-			},
-			"restingTime": {
-			  "amount": 1,
-			  "timeUnit": "minutes"
-			}
-		  }
-		]
-	  },
-	  "lautering": {
-		"withStirring": false,
-		"restingTime": {
-			"amount": 20,
-			"timeUnit": "minutes"
-		  },
-		  "spargeWater": {
-			"water": {
-				"amount": 23,
-				"volumeUnit": "liter"
-			  },
-			"waterTreatment": [
-			{
-				"type": "Milchsäure",
-				"amount": 11.0,
-				"volumeUnit": "milliliter"
-			}
-		]
+			"descriptions": [
+				{
+					"language": "en",
+					"text": "A longer mature time will bring better results"
+				},
+				{
+					"language": "de",
+					"text": "Längere Reifezeit bringt hier auch bessere Ergebnisse."
+				}
+			]
 		}
-	  },
-	  "cooking": {
-		  "overallCookingTime": {
-			  "amount": 90,
-			  "timeUnit": "minutes"
-		  },
-		  "targetTemperature": {
-			"amount": 100,
-			"tempUnit": "celsius"
-		  },
-		  "hops": [
-			{
-			  "name": "Hallertau Magnum",
-			  "alphaAcid": {
-				"amount": 12.1,
-				"chemicalUnit": "alphaAcid"
-			  },
-			  "shape": "pellet",
-			  "type": "bitter"
-			},
-			{
-			  "name": "Hallertau Saphir",
-			  "alphaAcid": {
-				"amount": 4.1,
-				"chemicalUnit": "alphaAcid"
-			  },
-			  "shape": "pellet",
-			  "type": "aroma"
-			}
-		  ]
-	  },
-	  "fermentation": {
-		"yeast": {
-		  "yeastName": "Safale WB40",
-		  "yeastType": "top-fermented",
-		  "yeastAmount": {
-			"amount": 11,
-			"weightUnit": "grams"
-		  },
-		  "yeastStarterNeeded": true
-		},
-		"targetTemperature": {
-		  "amount": 19,
-		  "tempUnit": "celsius"
-		},
-		"apparentAttenuation": {
-		  "amount": 3.9,
-		  "ratioUnit": "degreePlato"
-		},
-		"secondaryFermentation": {
-			"_comment4": "Add stuff for this!"
-		}
-	  },
-	  "matureProcess": {
-		"targetTemperature": {
-		  "amount": 2.5,
-		  "tempUnit": "celsius"
-		},
-		"restingTime": {
-		  "amount": 4,
-		  "timeUnit": "week"
-		},
-		"descriptions": [
-		  {
-			"language": "en",
-			"text": "A longer mature time will bring better results"
-		  },
-		  {
-			"language": "de",
-			"text": "Längere Reifezeit bringt hier auch bessere Ergebnisse."
-		  }
-		]
-	  }
 	}
-  }
+}
