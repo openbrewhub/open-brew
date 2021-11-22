@@ -9,7 +9,6 @@
 	  "beerType": "Helles Hefeweizen",
 	  "_comment0": "Photos as links?",
 	  "_comment1": "Enum for above 'beerType'?",
-	  "suggestedMashType": "Basic Infusion Mash - Step / Multistep Mashing - Decoction Mash",
 	  "_comment2": "Enum for above 'beerType'?",
 	  "descriptions": [
 		{
@@ -79,6 +78,7 @@
 	},
 	"brewing": {
 	  "mashing": {
+		"suggestedMashType": "Basic Infusion Mash - Step / Multistep Mashing - Decoction Mash",
 		"mashWater": {
 			"water": {
 				"amount": 23,

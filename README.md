@@ -35,11 +35,7 @@ The beer brewing scene changes. Since the craftbeer revolution came along, brewi
 - Directly import your favourite recipes to your IoT-Device
 - Address all automated parts (SSRs; Pumps; ...) in this json format  
 
-
 # Open Brew - Format Description  
-Here we go with some documentation. Each field will appear by it's name, type and description.
-
-## Index
 * [Supported Solids](#supported-solids)
 * [Supported Unit Types](#supported-unit-types)
   * [Unit Type Value Description](#unit-type-value-description)
