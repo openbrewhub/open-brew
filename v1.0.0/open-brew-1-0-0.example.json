@@ -272,10 +272,6 @@
 				"amount": 19,
 				"tempUnit": "celsius"
 			},
-			"apparentAttenuation": {
-				"amount": 3.9,
-				"ratioUnit": "degreePlato"
-			},
 			"secondaryFermentation": {
 				"_comment4": "Add stuff for this!"
 			}

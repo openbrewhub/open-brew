@@ -326,7 +326,6 @@
       "required": [
         "expectedEfficiency",
         "expectedOriginalGravity",
-        "expectedFinalGravity",
         "alcoholContent",
         "bitterness",
         "color"
@@ -385,8 +384,7 @@
                 }
               },
               "required": [
-                "water",
-                "waterTreatment"
+                "water"
               ]
             },
             "solids": {
@@ -1035,21 +1033,6 @@
                 "tempUnit"
               ]
             },
-            "apparentAttenuation": {
-              "type": "object",
-              "properties": {
-                "amount": {
-                  "type": "number"
-                },
-                "ratioUnit": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "amount",
-                "ratioUnit"
-              ]
-            },
             "secondaryFermentation": {
               "type": "object",
               "properties": {
@@ -1065,7 +1048,6 @@
           "required": [
             "yeast",
             "targetTemperature",
-            "apparentAttenuation",
             "secondaryFermentation"
           ]
         },
