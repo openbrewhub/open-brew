@@ -1119,20 +1119,14 @@
                 }
               ]
             }
-          },
-          "required": [
-            "targetTemperature",
-            "restingTime",
-            "descriptions"
-          ]
+          }
         }
       },
       "required": [
         "mash",
         "lauter",
         "boil",
-        "fermentation",
-        "matureProcess"
+        "fermentation"
       ]
     }
   },
