@@ -4,13 +4,26 @@
 	"info": {
 		"recipeName": "Schwabacher Herbstgold Hefeweizen",
 		"recipeVersion": 1,
+		"beerType": "Helles Hefeweizen",
+		"source": "https://openbrewhub.com/recipes/12345",
 		"createDate": "2021-09-11T16:48:13+00:00",
 		"changeDate": "2021-09-11T19:47:27+00:00",
-		"beerType": "Helles Hefeweizen",
-		"_comment0": "Photos as links?",
-		"_comment1": "Enum for above 'beerType'?",
-		"_comment2": "Enum for above 'beerType'?",
-		"descriptions": [
+		"images": [
+			{
+				"url": "https://m.media-amazon.com/images/I/718UOvQlr3L._AC_SL1500_.jpg",
+				"description": [
+					{
+						"language": "en",
+						"text": "This is a great wheat beer"
+					},
+					{
+						"language": "de",
+						"text": "Das ist ein großartiges Weizenbier"
+					}
+				]
+			}
+		],
+		"recipeDescription": [
 			{
 				"language": "en",
 				"text": "This great beer must be brewed with passion. Otherwise it won't taste good."
@@ -21,14 +34,15 @@
 			}
 		],
 		"author": {
+			"openBrewHubId": 12345,
 			"commercialBrewery": false,
 			"breweryName": "holdmybeer",
 			"brewMasterName": "René Fehlow und Sven Ulrich",
 			"breweryUrl": "http://holdmybeer.de",
 			"phone": "+49 911 123456789",
 			"address": {
-				"street": "Nadlerstr.",
-				"houseNumber": "12",
+				"street": "Example Street",
+				"houseNumber": "11",
 				"zip": "91126",
 				"city": "Schwabach",
 				"federateState": "Bavaria",
@@ -55,14 +69,12 @@
 		},
 		"PhValue": {
 			"amount": 4.31,
-			"chemicalUnit": "ph",
-			"_comment3": "Add ph as enum value for chemicalUnit"
+			"chemicalUnit": "ph"
 		},
 		"waterAlkalinity": {
 			"amount": 1.1,
 			"chemicalUnit": "dh"
 		},
-		"_comment": "Laboratory stuff like the analysis of our wheat beer from Leikeim?",
 		"bitterness": {
 			"amount": 15,
 			"tasteUnit": "ibu"
@@ -74,11 +86,12 @@
 		"color": {
 			"amount": 11.3,
 			"colorUnit": "ebc"
-		}
+		},
+		"_comment": "Further stuff needed here?"
 	},
-	"brewing": {
-		"mashing": {
-			"suggestedMashType": "Basic Infusion Mash - Step / Multistep Mashing - Decoction Mash",
+	"brew": {
+		"mash": {
+			"suggestedMashTypeDescription": "Basic Infusion Mash",
 			"mashWater": {
 				"water": {
 					"amount": 23,
@@ -181,7 +194,7 @@
 				}
 			]
 		},
-		"lautering": {
+		"lauter": {
 			"withStirring": false,
 			"restingTime": {
 				"amount": 20,
@@ -205,7 +218,7 @@
 				}
 			}
 		},
-		"cooking": {
+		"boil": {
 			"overallCookingTime": {
 				"amount": 90,
 				"timeUnit": "minutes"
@@ -222,7 +235,12 @@
 						"chemicalUnit": "alphaAcid"
 					},
 					"shape": "pellet",
-					"type": "bitter"
+					"type": "bitter",
+					"use": "boil",
+					"time": {
+						"amount": 10,
+						"timeUnit": "minutes"
+					}
 				},
 				{
 					"name": "Hallertau Saphir",
@@ -231,7 +249,12 @@
 						"chemicalUnit": "alphaAcid"
 					},
 					"shape": "pellet",
-					"type": "aroma"
+					"type": "aroma",
+					"use": "boil",
+					"time": {
+						"amount": 10,
+						"timeUnit": "minutes"
+					}
 				}
 			]
 		},
