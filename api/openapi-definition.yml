@@ -138,443 +138,545 @@ components:
         - id
         - name
       properties:
-        openBrewVersion: 
+        openBrewVersion:
+          description: The version of openbrew in format [0-9].[0-9].[0-9]
           type: string
-          example: 1.0.0
-        encoding: 
+        encoding:
+          description: The used encoding. Default is 'utf-8'
           type: string
-          example: UTF-8
-        info: 
+        info:
           type: object
-          properties: 
-            recipeName: 
+          properties:
+            recipeName:
+              description: The name of your fabulous beer recipe
               type: string
-              example: Schwabacher Herbstgold Hefeweizen
-            recipeVersion: 
+            recipeVersion:
+              description: The version of your recipe. Value will be increased automatically,
+                when you update your recipe
               type: integer
-              format: int32
-              example: 1
-            createDate: 
+            beerType:
+              description: The name of your fabulous beer recipe
               type: string
-              format: date-time
-              example: 2021-09-11T16:48:13+00:00
-            changeDate: 
+            source:
               type: string
-              format: date-time
-              example: 2021-09-11T19:47:27+00:00
-            beerType: 
+            createDate:
               type: string
-              example: Helles Hefeweizen
-            _comment0: 
+            changeDate:
               type: string
-              example: Photos as links?
-            _comment1: 
-              type: string
-              example: Enum for above 'beerType'?
-            _comment2: 
-              type: string
-              example: Enum for above 'beerType'?
-            descriptions: 
+            images:
               type: array
-              items: 
-                type: object
-                properties: 
-                  language: 
+              items:
+              - type: object
+                properties:
+                  url:
                     type: string
-                    example: en
-                  text: 
+                  description:
+                    type: array
+                    items:
+                    - type: object
+                      properties:
+                        language:
+                          type: string
+                        text:
+                          type: string
+                      required:
+                      - language
+                      - text
+                    - type: object
+                      properties:
+                        language:
+                          type: string
+                        text:
+                          type: string
+                      required:
+                      - language
+                      - text
+                required:
+                - url
+            recipeDescription:
+              type: array
+              items:
+              - type: object
+                properties:
+                  language:
                     type: string
-                    example: This great beer must be brewed with passion. Otherwise it won't taste good.
-            author: 
+                  text:
+                    type: string
+                required:
+                - language
+                - text
+              - type: object
+                properties:
+                  language:
+                    type: string
+                  text:
+                    type: string
+                required:
+                - language
+                - text
+            author:
               type: object
-              properties: 
-                commercialBrewery: 
-                  type: boolean
-                breweryName: 
-                  type: string
-                  example: holdmybeer
-                brewMasterName: 
-                  type: string
-                  example: René Fehlow und Sven Ulrich
-                breweryUrl: 
-                  type: string
-                  example: http://holdmybeer.de
-                phone: 
-                  type: string
-                  example: +49 911 123456789
-                address: 
-                  type: object
-                  properties: 
-                    street: 
-                      type: string
-                      example: Nadlerstr.
-                    houseNumber: 
-                      type: string
-                      example: 12
-                    zip: 
-                      type: string
-                      example: 91126
-                    city: 
-                      type: string
-                      example: Schwabach
-                    federateState: 
-                      type: string
-                      example: Bavaria
-                    country: 
-                      type: string
-                      example: Germany
-        vitalStatistics: 
-          type: object
-          properties: 
-            expectedEfficiency: 
-              type: object
-              properties: 
-                amount: 
+              properties:
+                openBrewHubId:
                   type: integer
-                  format: int32
-                  example: 62
-                relativeUnit: 
+                commercialBrewery:
+                  type: boolean
+                breweryName:
                   type: string
-                  example: percent
-            expectedOriginalGravity: 
+                brewMasterName:
+                  type: string
+                breweryUrl:
+                  type: string
+                phone:
+                  type: string
+                address:
+                  type: object
+                  properties:
+                    street:
+                      type: string
+                    houseNumber:
+                      type: string
+                    zip:
+                      type: string
+                    city:
+                      type: string
+                    federateState:
+                      type: string
+                    country:
+                      type: string
+              required:
+              - breweryName
+          required:
+          - recipeName
+          - recipeVersion
+          - beerType
+          - recipeDescription
+          - author
+        vitalStatistics:
+          type: object
+          properties:
+            expectedEfficiency:
               type: object
-              properties: 
-                amount: 
-                  type: number
-                  example: 13.85
-                ratioUnit: 
+              properties:
+                amount:
+                  type: integer
+                relativeUnit:
                   type: string
-                  example: degreePlato
-            expectedFinalGravity: 
+              required:
+              - amount
+              - relativeUnit
+            expectedOriginalGravity:
               type: object
-              properties: 
-                amount: 
+              properties:
+                amount:
                   type: number
-                  example: 3.5
-                ratioUnit: 
+                ratioUnit:
                   type: string
-                  example: degreePlato
-            alcoholContent: 
+              required:
+              - amount
+              - ratioUnit
+            expectedFinalGravity:
               type: object
-              properties: 
-                amount: 
+              properties:
+                amount:
                   type: number
-                  example: 6.3
-                ratioUnit: 
+                ratioUnit:
                   type: string
-                  example: volumePercent
-            PhValue: 
+              required:
+              - amount
+              - ratioUnit
+            alcoholContent:
               type: object
-              properties: 
-                amount: 
+              properties:
+                amount:
                   type: number
-                  example: 4.31
-                chemicalUnit: 
+                ratioUnit:
                   type: string
-                  example: ph
-                _comment3: 
-                  type: string
-                  example: Add ph as enum value for chemicalUnit
-            waterAlkalinity: 
+              required:
+              - amount
+              - ratioUnit
+            PhValue:
               type: object
-              properties: 
-                amount: 
+              properties:
+                amount:
                   type: number
-                  example: 1.1
-                chemicalUnit: 
+                chemicalUnit:
                   type: string
-                  example: dh
-            _comment: 
+              required:
+              - amount
+              - chemicalUnit
+            waterAlkalinity:
+              type: object
+              properties:
+                amount:
+                  type: number
+                chemicalUnit:
+                  type: string
+              required:
+              - amount
+              - chemicalUnit
+            bitterness:
+              type: object
+              properties:
+                amount:
+                  type: integer
+                tasteUnit:
+                  type: string
+              required:
+              - amount
+              - tasteUnit
+            carbonationLevel:
+              type: object
+              properties:
+                amount:
+                  type: integer
+                ratioUnit:
+                  type: string
+              required:
+              - amount
+              - ratioUnit
+            color:
+              type: object
+              properties:
+                amount:
+                  type: number
+                colorUnit:
+                  type: string
+              required:
+              - amount
+              - colorUnit
+            _comment:
               type: string
-              example: Laboratory stuff like the analysis of our wheat beer from Leikeim?
-            bitterness: 
-              type: object
-              properties: 
-                amount: 
-                  type: integer
-                  format: int32
-                  example: 15
-                tasteUnit: 
-                  type: string
-                  example: ibu
-            carbonationLevel: 
-              type: object
-              properties: 
-                amount: 
-                  type: integer
-                  format: int32
-                  example: 5
-                ratioUnit: 
-                  type: string
-                  example: gramsPerLiter
-            color: 
-              type: object
-              properties: 
-                amount: 
-                  type: number
-                  example: 11.3
-                colorUnit: 
-                  type: string
-                  example: ebc
-        brewing: 
+          required:
+          - expectedEfficiency
+          - expectedOriginalGravity
+          - alcoholContent
+          - bitterness
+          - color
+        brew:
           type: object
-          properties: 
-            mashing: 
+          properties:
+            mash:
               type: object
-              properties: 
-                suggestedMashType: 
+              properties:
+                suggestedMashTypeDescription:
                   type: string
-                  example: Basic Infusion Mash - Step / Multistep Mashing - Decoction Mash
-                mashWater: 
+                mashWater:
                   type: object
-                  properties: 
-                    water: 
+                  properties:
+                    water:
                       type: object
-                      properties: 
-                        amount: 
+                      properties:
+                        amount:
                           type: integer
-                          format: int32
-                          example: 23
-                        volumeUnit: 
+                        volumeUnit:
                           type: string
-                          example: liter
-                    waterTreatment: 
+                      required:
+                      - amount
+                      - volumeUnit
+                    waterTreatment:
                       type: array
-                      items: 
-                        type: object
-                        properties: 
-                          type: 
+                      items:
+                      - type: object
+                        properties:
+                          type:
                             type: string
-                            example: Milchsäure
-                          amount: 
-                            type: integer
-                            format: int32
-                            example: 11
-                          volumeUnit: 
-                            type: string
-                            example: milliliter
-                solids: 
-                  type: array
-                  items: 
-                    type: object
-                    properties: 
-                      name: 
-                        type: string
-                        example: Weizenmalz
-                      type: 
-                        type: string
-                        example: grain
-                      portion: 
-                        type: object
-                        properties: 
-                          amount: 
-                            type: integer
-                            format: int32
-                            example: 2250
-                          weightUnit: 
-                            type: string
-                            example: grams
-                rests: 
-                  type: array
-                  items: 
-                    type: object
-                    properties: 
-                      name: 
-                        type: string
-                        example: Einmaischen
-                      withStirring: 
-                        type: boolean
-                      targetTemperature: 
-                        type: object
-                        properties: 
-                          amount: 
-                            type: integer
-                            format: int32
-                            example: 47
-                          tempUnit: 
-                            type: string
-                            example: celsius
-                      restingTime: 
-                        type: object
-                        properties: 
-                          amount: 
-                            type: integer
-                            format: int32
-                            example: 2
-                          timeUnit: 
-                            type: string
-                            example: minutes
-            lautering: 
-              type: object
-              properties: 
-                withStirring: 
-                  type: boolean
-                restingTime: 
-                  type: object
-                  properties: 
-                    amount: 
-                      type: integer
-                      format: int32
-                      example: 20
-                    timeUnit: 
-                      type: string
-                      example: minutes
-                spargeWater: 
-                  type: object
-                  properties: 
-                    water: 
-                      type: object
-                      properties: 
-                        amount: 
-                          type: integer
-                          format: int32
-                          example: 23
-                        volumeUnit: 
-                          type: string
-                          example: liter
-                    waterTreatment: 
-                      type: array
-                      items: 
-                        type: object
-                        properties: 
-                          type: 
-                            type: string
-                            example: Milchsäure
-                          amount: 
-                            type: integer
-                            format: int32
-                            example: 11
-                          volumeUnit: 
-                            type: string
-                            example: milliliter
-            cooking: 
-              type: object
-              properties: 
-                overallCookingTime: 
-                  type: object
-                  properties: 
-                    amount: 
-                      type: integer
-                      format: int32
-                      example: 90
-                    timeUnit: 
-                      type: string
-                      example: minutes
-                targetTemperature: 
-                  type: object
-                  properties: 
-                    amount: 
-                      type: integer
-                      format: int32
-                      example: 100
-                    tempUnit: 
-                      type: string
-                      example: celsius
-                hops: 
-                  type: array
-                  items: 
-                    type: object
-                    properties: 
-                      name: 
-                        type: string
-                        example: Hallertau Magnum
-                      alphaAcid: 
-                        type: object
-                        properties: 
-                          amount: 
+                          amount:
                             type: number
-                            example: 12.1
-                          chemicalUnit: 
+                          volumeUnit:
                             type: string
-                            example: alphaAcid
-                      shape: 
-                        type: string
-                        example: pellet
-                      type: 
-                        type: string
-                        example: bitter
-            fermentation: 
-              type: object
-              properties: 
-                yeast: 
-                  type: object
-                  properties: 
-                    yeastName: 
-                      type: string
-                      example: Safale WB40
-                    yeastType: 
-                      type: string
-                      example: top-fermented
-                    yeastAmount: 
-                      type: object
-                      properties: 
-                        amount: 
-                          type: integer
-                          format: int32
-                          example: 11
-                        weightUnit: 
-                          type: string
-                          example: grams
-                    yeastStarterNeeded: 
-                      type: boolean
-                targetTemperature: 
-                  type: object
-                  properties: 
-                    amount: 
-                      type: integer
-                      format: int32
-                      example: 19
-                    tempUnit: 
-                      type: string
-                      example: celsius
-                apparentAttenuation: 
-                  type: object
-                  properties: 
-                    amount: 
-                      type: number
-                      example: 3.9
-                    ratioUnit: 
-                      type: string
-                      example: degreePlato
-                secondaryFermentation: 
-                  type: object
-                  properties: 
-                    _comment4: 
-                      type: string
-                      example: Add stuff for this!
-            matureProcess: 
-              type: object
-              properties: 
-                targetTemperature: 
-                  type: object
-                  properties: 
-                    amount: 
-                      type: number
-                      example: 2.5
-                    tempUnit: 
-                      type: string
-                      example: celsius
-                restingTime: 
-                  type: object
-                  properties: 
-                    amount: 
-                      type: integer
-                      format: int32
-                      example: 4
-                    timeUnit: 
-                      type: string
-                      example: week
-                descriptions: 
+                        required:
+                        - type
+                        - amount
+                        - volumeUnit
+                  required:
+                  - water
+                solids:
                   type: array
-                  items: 
-                    type: object
-                    properties: 
-                      language: 
+                  items:
+                  - type: object
+                    properties:
+                      name:
                         type: string
-                        example: en
-                      text: 
+                      type:
                         type: string
-                        example: A longer mature time will bring better results
+                      portion:
+                        type: object
+                        properties:
+                          amount:
+                            type: number
+                          weightUnit:
+                            type: string
+                        required:
+                        - amount
+                        - weightUnit
+                    required:
+                    - name
+                    - type
+                    - portion
+                rests:
+                  type: array
+                  items:
+                  - type: object
+                    properties:
+                      name:
+                        type: string
+                      withStirring:
+                        type: boolean
+                      targetTemperature:
+                        type: object
+                        properties:
+                          amount:
+                            type: integer
+                          tempUnit:
+                            type: string
+                        required:
+                        - amount
+                        - tempUnit
+                      restingTime:
+                        type: object
+                        properties:
+                          amount:
+                            type: integer
+                          timeUnit:
+                            type: string
+                        required:
+                        - amount
+                        - timeUnit
+                    required:
+                    - name
+                    - targetTemperature
+                    - restingTime
+              required:
+              - mashWater
+              - solids
+              - rests
+            lauter:
+              type: object
+              properties:
+                withStirring:
+                  type: boolean
+                restingTime:
+                  type: object
+                  properties:
+                    amount:
+                      type: integer
+                    timeUnit:
+                      type: string
+                  required:
+                  - amount
+                  - timeUnit
+                spargeWater:
+                  type: object
+                  properties:
+                    water:
+                      type: object
+                      properties:
+                        amount:
+                          type: integer
+                        volumeUnit:
+                          type: string
+                      required:
+                      - amount
+                      - volumeUnit
+                    waterTreatment:
+                      type: array
+                      items:
+                      - type: object
+                        properties:
+                          type:
+                            type: string
+                          amount:
+                            type: number
+                          volumeUnit:
+                            type: string
+                        required:
+                        - type
+                        - amount
+                        - volumeUnit
+                    targetTemperature:
+                      type: object
+                      properties:
+                        amount:
+                          type: integer
+                        tempUnit:
+                          type: string
+                      required:
+                      - amount
+                      - tempUnit
+                  required:
+                  - water
+                  - targetTemperature
+              required:
+              - restingTime
+              - spargeWater
+            boil:
+              type: object
+              properties:
+                overallCookingTime:
+                  type: object
+                  properties:
+                    amount:
+                      type: integer
+                    timeUnit:
+                      type: string
+                  required:
+                  - amount
+                  - timeUnit
+                targetTemperature:
+                  type: object
+                  properties:
+                    amount:
+                      type: integer
+                    tempUnit:
+                      type: string
+                  required:
+                  - amount
+                  - tempUnit
+                hops:
+                  type: array
+                  items:
+                  - type: object
+                    properties:
+                      name:
+                        type: string
+                      alphaAcid:
+                        type: object
+                        properties:
+                          amount:
+                            type: number
+                          chemicalUnit:
+                            type: string
+                        required:
+                        - amount
+                        - chemicalUnit
+                      shape:
+                        type: string
+                      type:
+                        type: string
+                      use:
+                        type: string
+                      time:
+                        type: object
+                        properties:
+                          amount:
+                            type: integer
+                          timeUnit:
+                            type: string
+                        required:
+                        - amount
+                        - timeUnit
+                    required:
+                    - name
+                    - alphaAcid
+                    - type
+                    - use
+                    - time
+              required:
+              - overallCookingTime
+              - hops
+            fermentation:
+              type: object
+              properties:
+                yeast:
+                  type: object
+                  properties:
+                    yeastName:
+                      type: string
+                    yeastType:
+                      type: string
+                    yeastAmount:
+                      type: object
+                      properties:
+                        amount:
+                          type: integer
+                        weightUnit:
+                          type: string
+                      required:
+                      - amount
+                      - weightUnit
+                    yeastStarterNeeded:
+                      type: boolean
+                  required:
+                  - yeastName
+                  - yeastType
+                  - yeastAmount
+                targetTemperature:
+                  type: object
+                  properties:
+                    amount:
+                      type: integer
+                    tempUnit:
+                      type: string
+                  required:
+                  - amount
+                  - tempUnit
+                secondaryFermentation:
+                  type: object
+                  properties:
+                    _comment4:
+                      type: string
+                  required:
+                  - _comment4
+              required:
+              - yeast
+              - targetTemperature
+            matureProcess:
+              type: object
+              properties:
+                targetTemperature:
+                  type: object
+                  properties:
+                    amount:
+                      type: number
+                    tempUnit:
+                      type: string
+                  required:
+                  - amount
+                  - tempUnit
+                restingTime:
+                  type: object
+                  properties:
+                    amount:
+                      type: integer
+                    timeUnit:
+                      type: string
+                  required:
+                  - amount
+                  - timeUnit
+                descriptions:
+                  type: array
+                  items:
+                  - type: object
+                    properties:
+                      language:
+                        type: string
+                      text:
+                        type: string
+                    required:
+                    - language
+                    - text
+                  - type: object
+                    properties:
+                      language:
+                        type: string
+                      text:
+                        type: string
+                    required:
+                    - language
+                    - text
+          required:
+          - mash
+          - lauter
+          - boil
+          - fermentation
+      required:
+      - openBrewVersion
+      - encoding
+      - info
+      - vitalStatistics
+      - brew
+
     Recipes:
       type: array
       items:
