@@ -219,7 +219,7 @@
 			}
 		},
 		"boil": {
-			"overallCookingTime": {
+			"overallBoilTime": {
 				"amount": 90,
 				"timeUnit": "minutes"
 			},

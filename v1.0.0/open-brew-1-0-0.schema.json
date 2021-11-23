@@ -573,7 +573,7 @@
         "boil": {
           "type": "object",
           "properties": {
-            "overallCookingTime": {
+            "overallBoilTime": {
               "type": "object",
               "properties": {
                 "amount": {
@@ -664,7 +664,7 @@
             }
           },
           "required": [
-            "overallCookingTime",
+            "overallBoilTime",
             "hops"
           ]
         },

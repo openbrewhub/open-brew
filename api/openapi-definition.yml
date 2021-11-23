@@ -513,7 +513,7 @@ components:
             boil:
               type: object
               properties:
-                overallCookingTime:
+                overallBoilTime:
                   type: object
                   properties:
                     amount:
@@ -573,7 +573,7 @@ components:
                     - use
                     - time
               required:
-              - overallCookingTime
+              - overallBoilTime
               - hops
             fermentation:
               type: object
