@@ -37,7 +37,7 @@ paths:
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: A paged array of brew recipes
           headers:
             x-next:
@@ -45,7 +45,7 @@ paths:
               schema:
                 type: string
           content:
-            application/json:    
+            application/json:
               schema:
                 $ref: "#/components/schemas/Recipes"
         default:
@@ -65,9 +65,9 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Recipe'
+              $ref: "#/components/schemas/Recipe"
       responses:
-        '201':
+        "201":
           description: Null response
         default:
           description: unexpected error
@@ -75,7 +75,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Error"
-    
+
   /recipes/{recipeId}:
     get:
       summary: Get a specific recipe
@@ -90,7 +90,7 @@ paths:
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Expected response to a valid request
           content:
             application/json:
@@ -120,9 +120,9 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Recipe'
+              $ref: "#/components/schemas/Recipe"
       responses:
-        '201':
+        "201":
           description: Null response
         default:
           description: unexpected error
@@ -134,9 +134,6 @@ components:
   schemas:
     Recipe:
       type: object
-      required:
-        - id
-        - name
       properties:
         openBrewVersion:
           description: The version of openbrew in format [0-9].[0-9].[0-9]
@@ -151,7 +148,8 @@ components:
               description: The name of your fabulous beer recipe
               type: string
             recipeVersion:
-              description: The version of your recipe. Value will be increased automatically,
+              description:
+                The version of your recipe. Value will be increased automatically,
                 when you update your recipe
               type: integer
             beerType:
@@ -166,54 +164,36 @@ components:
             images:
               type: array
               items:
-              - type: object
+                type: object
                 properties:
                   url:
                     type: string
                   description:
                     type: array
                     items:
-                    - type: object
+                      type: object
                       properties:
                         language:
                           type: string
                         text:
                           type: string
                       required:
-                      - language
-                      - text
-                    - type: object
-                      properties:
-                        language:
-                          type: string
-                        text:
-                          type: string
-                      required:
-                      - language
-                      - text
+                        - language
+                        - text
                 required:
-                - url
+                  - url
             recipeDescription:
               type: array
               items:
-              - type: object
+                type: object
                 properties:
                   language:
                     type: string
                   text:
                     type: string
                 required:
-                - language
-                - text
-              - type: object
-                properties:
-                  language:
-                    type: string
-                  text:
-                    type: string
-                required:
-                - language
-                - text
+                  - language
+                  - text
             author:
               type: object
               properties:
@@ -245,13 +225,13 @@ components:
                     country:
                       type: string
               required:
-              - breweryName
+                - breweryName
           required:
-          - recipeName
-          - recipeVersion
-          - beerType
-          - recipeDescription
-          - author
+            - recipeName
+            - recipeVersion
+            - beerType
+            - recipeDescription
+            - author
         vitalStatistics:
           type: object
           properties:
@@ -263,8 +243,8 @@ components:
                 relativeUnit:
                   type: string
               required:
-              - amount
-              - relativeUnit
+                - amount
+                - relativeUnit
             expectedOriginalGravity:
               type: object
               properties:
@@ -273,8 +253,8 @@ components:
                 ratioUnit:
                   type: string
               required:
-              - amount
-              - ratioUnit
+                - amount
+                - ratioUnit
             expectedFinalGravity:
               type: object
               properties:
@@ -283,8 +263,8 @@ components:
                 ratioUnit:
                   type: string
               required:
-              - amount
-              - ratioUnit
+                - amount
+                - ratioUnit
             alcoholContent:
               type: object
               properties:
@@ -293,8 +273,8 @@ components:
                 ratioUnit:
                   type: string
               required:
-              - amount
-              - ratioUnit
+                - amount
+                - ratioUnit
             PhValue:
               type: object
               properties:
@@ -303,8 +283,8 @@ components:
                 chemicalUnit:
                   type: string
               required:
-              - amount
-              - chemicalUnit
+                - amount
+                - chemicalUnit
             waterAlkalinity:
               type: object
               properties:
@@ -313,8 +293,8 @@ components:
                 chemicalUnit:
                   type: string
               required:
-              - amount
-              - chemicalUnit
+                - amount
+                - chemicalUnit
             bitterness:
               type: object
               properties:
@@ -323,8 +303,8 @@ components:
                 tasteUnit:
                   type: string
               required:
-              - amount
-              - tasteUnit
+                - amount
+                - tasteUnit
             carbonationLevel:
               type: object
               properties:
@@ -333,8 +313,8 @@ components:
                 ratioUnit:
                   type: string
               required:
-              - amount
-              - ratioUnit
+                - amount
+                - ratioUnit
             color:
               type: object
               properties:
@@ -343,16 +323,16 @@ components:
                 colorUnit:
                   type: string
               required:
-              - amount
-              - colorUnit
+                - amount
+                - colorUnit
             _comment:
               type: string
           required:
-          - expectedEfficiency
-          - expectedOriginalGravity
-          - alcoholContent
-          - bitterness
-          - color
+            - expectedEfficiency
+            - expectedOriginalGravity
+            - alcoholContent
+            - bitterness
+            - color
         brew:
           type: object
           properties:
@@ -372,12 +352,12 @@ components:
                         volumeUnit:
                           type: string
                       required:
-                      - amount
-                      - volumeUnit
+                        - amount
+                        - volumeUnit
                     waterTreatment:
                       type: array
                       items:
-                      - type: object
+                        type: object
                         properties:
                           type:
                             type: string
@@ -386,15 +366,15 @@ components:
                           volumeUnit:
                             type: string
                         required:
-                        - type
-                        - amount
-                        - volumeUnit
+                          - type
+                          - amount
+                          - volumeUnit
                   required:
-                  - water
+                    - water
                 solids:
                   type: array
                   items:
-                  - type: object
+                    type: object
                     properties:
                       name:
                         type: string
@@ -408,16 +388,16 @@ components:
                           weightUnit:
                             type: string
                         required:
-                        - amount
-                        - weightUnit
+                          - amount
+                          - weightUnit
                     required:
-                    - name
-                    - type
-                    - portion
+                      - name
+                      - type
+                      - portion
                 rests:
                   type: array
                   items:
-                  - type: object
+                    type: object
                     properties:
                       name:
                         type: string
@@ -431,8 +411,8 @@ components:
                           tempUnit:
                             type: string
                         required:
-                        - amount
-                        - tempUnit
+                          - amount
+                          - tempUnit
                       restingTime:
                         type: object
                         properties:
@@ -441,16 +421,16 @@ components:
                           timeUnit:
                             type: string
                         required:
-                        - amount
-                        - timeUnit
+                          - amount
+                          - timeUnit
                     required:
-                    - name
-                    - targetTemperature
-                    - restingTime
+                      - name
+                      - targetTemperature
+                      - restingTime
               required:
-              - mashWater
-              - solids
-              - rests
+                - mashWater
+                - solids
+                - rests
             lauter:
               type: object
               properties:
@@ -464,8 +444,8 @@ components:
                     timeUnit:
                       type: string
                   required:
-                  - amount
-                  - timeUnit
+                    - amount
+                    - timeUnit
                 spargeWater:
                   type: object
                   properties:
@@ -477,12 +457,12 @@ components:
                         volumeUnit:
                           type: string
                       required:
-                      - amount
-                      - volumeUnit
+                        - amount
+                        - volumeUnit
                     waterTreatment:
                       type: array
                       items:
-                      - type: object
+                        type: object
                         properties:
                           type:
                             type: string
@@ -491,9 +471,9 @@ components:
                           volumeUnit:
                             type: string
                         required:
-                        - type
-                        - amount
-                        - volumeUnit
+                          - type
+                          - amount
+                          - volumeUnit
                     targetTemperature:
                       type: object
                       properties:
@@ -502,14 +482,14 @@ components:
                         tempUnit:
                           type: string
                       required:
-                      - amount
-                      - tempUnit
+                        - amount
+                        - tempUnit
                   required:
-                  - water
-                  - targetTemperature
+                    - water
+                    - targetTemperature
               required:
-              - restingTime
-              - spargeWater
+                - restingTime
+                - spargeWater
             boil:
               type: object
               properties:
@@ -521,8 +501,8 @@ components:
                     timeUnit:
                       type: string
                   required:
-                  - amount
-                  - timeUnit
+                    - amount
+                    - timeUnit
                 targetTemperature:
                   type: object
                   properties:
@@ -531,12 +511,12 @@ components:
                     tempUnit:
                       type: string
                   required:
-                  - amount
-                  - tempUnit
+                    - amount
+                    - tempUnit
                 hops:
                   type: array
                   items:
-                  - type: object
+                    type: object
                     properties:
                       name:
                         type: string
@@ -548,8 +528,8 @@ components:
                           chemicalUnit:
                             type: string
                         required:
-                        - amount
-                        - chemicalUnit
+                          - amount
+                          - chemicalUnit
                       shape:
                         type: string
                       type:
@@ -564,17 +544,17 @@ components:
                           timeUnit:
                             type: string
                         required:
-                        - amount
-                        - timeUnit
+                          - amount
+                          - timeUnit
                     required:
-                    - name
-                    - alphaAcid
-                    - type
-                    - use
-                    - time
+                      - name
+                      - alphaAcid
+                      - type
+                      - use
+                      - time
               required:
-              - overallBoilTime
-              - hops
+                - overallBoilTime
+                - hops
             fermentation:
               type: object
               properties:
@@ -593,14 +573,14 @@ components:
                         weightUnit:
                           type: string
                       required:
-                      - amount
-                      - weightUnit
+                        - amount
+                        - weightUnit
                     yeastStarterNeeded:
                       type: boolean
                   required:
-                  - yeastName
-                  - yeastType
-                  - yeastAmount
+                    - yeastName
+                    - yeastType
+                    - yeastAmount
                 targetTemperature:
                   type: object
                   properties:
@@ -609,18 +589,18 @@ components:
                     tempUnit:
                       type: string
                   required:
-                  - amount
-                  - tempUnit
+                    - amount
+                    - tempUnit
                 secondaryFermentation:
                   type: object
                   properties:
                     _comment4:
                       type: string
                   required:
-                  - _comment4
+                    - _comment4
               required:
-              - yeast
-              - targetTemperature
+                - yeast
+                - targetTemperature
             matureProcess:
               type: object
               properties:
@@ -632,8 +612,8 @@ components:
                     tempUnit:
                       type: string
                   required:
-                  - amount
-                  - tempUnit
+                    - amount
+                    - tempUnit
                 restingTime:
                   type: object
                   properties:
@@ -642,41 +622,31 @@ components:
                     timeUnit:
                       type: string
                   required:
-                  - amount
-                  - timeUnit
+                    - amount
+                    - timeUnit
                 descriptions:
                   type: array
                   items:
-                  - type: object
+                    type: object
                     properties:
                       language:
                         type: string
                       text:
                         type: string
                     required:
-                    - language
-                    - text
-                  - type: object
-                    properties:
-                      language:
-                        type: string
-                      text:
-                        type: string
-                    required:
-                    - language
-                    - text
+                      - language
+                      - text
           required:
-          - mash
-          - lauter
-          - boil
-          - fermentation
+            - mash
+            - lauter
+            - boil
+            - fermentation
       required:
-      - openBrewVersion
-      - encoding
-      - info
-      - vitalStatistics
-      - brew
-
+        - openBrewVersion
+        - encoding
+        - info
+        - vitalStatistics
+        - brew
     Recipes:
       type: array
       items:
