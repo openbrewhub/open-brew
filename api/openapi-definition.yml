@@ -7,7 +7,7 @@ info:
     name: Beerware
     url: https://de.wikipedia.org/wiki/Beerware
 servers:
-  - url: http://openbrewhub.com/api/v1
+  - url: http://api.openbrewhub.com/api/
 paths:
   /recipes:
     get:
@@ -121,6 +121,27 @@ paths:
           application/json:
             schema:
               $ref: "#/components/schemas/Recipe"
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      summary: Delete an existing recipe
+      operationId: deleteRecipe
+      tags:
+        - recipes
+      parameters:
+        - name: recipeId
+          in: path
+          required: true
+          description: The id of the recipe to delete
+          schema:
+            type: string
       responses:
         "201":
           description: Null response
